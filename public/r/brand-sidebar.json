@@ -5,11 +5,11 @@
   "title": "Brand Sidebar",
   "description": "A styled, simple, reusable sidebar",
   "registryDependencies": [
-    "badge",
-    "button",
     "sidebar",
     "https://linderlabs-registry.vercel.app/r/sonner.json",
-    "https://linderlabs-registry.vercel.app/r/theme.json"
+    "https://linderlabs-registry.vercel.app/r/theme.json",
+    "https://linderlabs-registry.vercel.app/r/badge.json",
+    "https://linderlabs-registry.vercel.app/r/button.json"
   ],
   "files": [
     {

@@ -151,13 +151,13 @@
       "icon": "PanelTop",
       "description": "A styled, simple, reusable header",
       "registryDependencies": [
-        "button",
-        "input",
-        "avatar",
         "sidebar",
         "https://linderlabs-registry.vercel.app/r/sonner.json",
         "https://linderlabs-registry.vercel.app/r/logo.json",
-        "https://linderlabs-registry.vercel.app/r/theme.json"
+        "https://linderlabs-registry.vercel.app/r/theme.json",
+        "https://linderlabs-registry.vercel.app/r/button.json",
+        "https://linderlabs-registry.vercel.app/r/input.json",
+        "https://linderlabs-registry.vercel.app/r/avatar.json"
       ],
       "files": [
         {
@@ -183,11 +183,11 @@
       "icon": "Sidebar",
       "description": "A styled, simple, reusable sidebar",
       "registryDependencies": [
-        "badge",
-        "button",
         "sidebar",
         "https://linderlabs-registry.vercel.app/r/sonner.json",
-        "https://linderlabs-registry.vercel.app/r/theme.json"
+        "https://linderlabs-registry.vercel.app/r/theme.json",
+        "https://linderlabs-registry.vercel.app/r/badge.json",
+        "https://linderlabs-registry.vercel.app/r/button.json"
       ],
       "files": [
         {
