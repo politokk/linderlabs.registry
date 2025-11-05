@@ -53,6 +53,7 @@ import { radioGroup } from "@/app/demo/[name]/ui/radio-group";
 import { resizable } from "@/app/demo/[name]/ui/resizable";
 import { scrollArea } from "@/app/demo/[name]/ui/scroll-area";
 import { select } from "@/app/demo/[name]/ui/select";
+import { sidebar } from "@/app/demo/[name]/ui/sidebar"; 
 import { separator } from "@/app/demo/[name]/ui/separator";
 import { sheet } from "@/app/demo/[name]/ui/sheet";
 import { skeleton } from "@/app/demo/[name]/ui/skeleton";
@@ -131,6 +132,7 @@ export const demos: { [name: string]: Demo } = {
   select,
   "separator": separator,
   "sheet": sheet,
+  "sidebar": sidebar,
   "skeleton": skeleton,
   "slider": slider,
   "spinner": spinner,
