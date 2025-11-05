@@ -1,0 +1,1278 @@
+/* themes.css — unified structure for all themes
+   Each theme defines the same variable set plus a @variant dark block.
+   Charts map 1..11 to the 50..950 steps of the theme color scale. */
+
+/* === Default (Indigo) ===================================================== */
+.theme-default {
+  --primary: var(--color-indigo-600);
+  --primary-foreground: var(--color-indigo-50);
+  --accent: var(--color-indigo-50);
+  --accent-foreground: var(--color-indigo-600);
+  --sidebar-accent: var(--color-indigo-50);
+  --sidebar-accent-foreground: var(--color-indigo-500);
+  --selection: var(--color-indigo-50);
+  --selection-foreground: var(--color-indigo-600);
+  --tooltip: var(--color-indigo-400);
+  --tooltip-foreground: var(--color-indigo-100);
+
+  --chart-1: var(--color-indigo-50);
+  --chart-2: var(--color-indigo-100);
+  --chart-3: var(--color-indigo-200);
+  --chart-4: var(--color-indigo-300);
+  --chart-5: var(--color-indigo-400);
+  --chart-6: var(--color-indigo-500);
+  --chart-7: var(--color-indigo-600);
+  --chart-8: var(--color-indigo-700);
+  --chart-9: var(--color-indigo-800);
+  --chart-10: var(--color-indigo-900);
+  --chart-11: var(--color-indigo-950);
+
+  @variant dark {
+    --primary: var(--color-indigo-500);
+    --primary-foreground: var(--color-indigo-50);
+    --accent: var(--color-indigo-950);
+    --accent-foreground: var(--color-indigo-400);
+    --sidebar-accent: var(--color-indigo-950);
+    --sidebar-accent-foreground: var(--color-indigo-400);
+    --selection: var(--color-indigo-950);
+    --selection-foreground: var(--color-indigo-400);
+    --tooltip: var(--color-indigo-800);
+    --tooltip-foreground: var(--color-indigo-200);
+
+    --chart-1: var(--color-indigo-50);
+    --chart-2: var(--color-indigo-100);
+    --chart-3: var(--color-indigo-200);
+    --chart-4: var(--color-indigo-300);
+    --chart-5: var(--color-indigo-400);
+    --chart-6: var(--color-indigo-500);
+    --chart-7: var(--color-indigo-600);
+    --chart-8: var(--color-indigo-700);
+    --chart-9: var(--color-indigo-800);
+    --chart-10: var(--color-indigo-900);
+    --chart-11: var(--color-indigo-950);
+  }
+}
+
+/* === Red ================================================================== */
+.theme-red {
+  --primary: var(--color-red-600);
+  --primary-foreground: var(--color-red-50);
+  --accent: var(--color-red-50);
+  --accent-foreground: var(--color-red-600);
+  --sidebar-accent: var(--color-red-50);
+  --sidebar-accent-foreground: var(--color-red-500);
+  --selection: var(--color-red-50);
+  --selection-foreground: var(--color-red-600);
+  --tooltip: var(--color-red-400);
+  --tooltip-foreground: var(--color-red-100);
+
+  --chart-1: var(--color-red-50);
+  --chart-2: var(--color-red-100);
+  --chart-3: var(--color-red-200);
+  --chart-4: var(--color-red-300);
+  --chart-5: var(--color-red-400);
+  --chart-6: var(--color-red-500);
+  --chart-7: var(--color-red-600);
+  --chart-8: var(--color-red-700);
+  --chart-9: var(--color-red-800);
+  --chart-10: var(--color-red-900);
+  --chart-11: var(--color-red-950);
+
+  @variant dark {
+    --primary: var(--color-red-500);
+    --primary-foreground: var(--color-red-50);
+    --accent: var(--color-red-950);
+    --accent-foreground: var(--color-red-400);
+    --sidebar-accent: var(--color-red-950);
+    --sidebar-accent-foreground: var(--color-red-400);
+    --selection: var(--color-red-950);
+    --selection-foreground: var(--color-red-400);
+    --tooltip: var(--color-red-800);
+    --tooltip-foreground: var(--color-red-100);
+
+    --chart-1: var(--color-red-50);
+    --chart-2: var(--color-red-100);
+    --chart-3: var(--color-red-200);
+    --chart-4: var(--color-red-300);
+    --chart-5: var(--color-red-400);
+    --chart-6: var(--color-red-500);
+    --chart-7: var(--color-red-600);
+    --chart-8: var(--color-red-700);
+    --chart-9: var(--color-red-800);
+    --chart-10: var(--color-red-900);
+    --chart-11: var(--color-red-950);
+  }
+}
+
+/* === Orange ============================================================== */
+.theme-orange {
+  --primary: var(--color-orange-600);
+  --primary-foreground: var(--color-orange-50);
+  --accent: var(--color-orange-50);
+  --accent-foreground: var(--color-orange-600);
+  --sidebar-accent: var(--color-orange-50);
+  --sidebar-accent-foreground: var(--color-orange-500);
+  --selection: var(--color-orange-50);
+  --selection-foreground: var(--color-orange-600);
+  --tooltip: var(--color-orange-400);
+  --tooltip-foreground: var(--color-orange-100);
+
+  --chart-1: var(--color-orange-50);
+  --chart-2: var(--color-orange-100);
+  --chart-3: var(--color-orange-200);
+  --chart-4: var(--color-orange-300);
+  --chart-5: var(--color-orange-400);
+  --chart-6: var(--color-orange-500);
+  --chart-7: var(--color-orange-600);
+  --chart-8: var(--color-orange-700);
+  --chart-9: var(--color-orange-800);
+  --chart-10: var(--color-orange-900);
+  --chart-11: var(--color-orange-950);
+
+  @variant dark {
+    --primary: var(--color-orange-500);
+    --primary-foreground: var(--color-orange-50);
+    --accent: var(--color-orange-950);
+    --accent-foreground: var(--color-orange-400);
+    --sidebar-accent: var(--color-orange-950);
+    --sidebar-accent-foreground: var(--color-orange-400);
+    --selection: var(--color-orange-950);
+    --selection-foreground: var(--color-orange-400);
+    --tooltip: var(--color-orange-800);
+    --tooltip-foreground: var(--color-orange-200);
+
+    --chart-1: var(--color-orange-50);
+    --chart-2: var(--color-orange-100);
+    --chart-3: var(--color-orange-200);
+    --chart-4: var(--color-orange-300);
+    --chart-5: var(--color-orange-400);
+    --chart-6: var(--color-orange-500);
+    --chart-7: var(--color-orange-600);
+    --chart-8: var(--color-orange-700);
+    --chart-9: var(--color-orange-800);
+    --chart-10: var(--color-orange-900);
+    --chart-11: var(--color-orange-950);
+  }
+}
+
+/* === Amber ================================================================ */
+.theme-amber {
+  --primary: var(--color-amber-600);
+  --primary-foreground: var(--color-amber-50);
+  --accent: var(--color-amber-50);
+  --accent-foreground: var(--color-amber-600);
+  --sidebar-accent: var(--color-amber-50);
+  --sidebar-accent-foreground: var(--color-amber-500);
+  --selection: var(--color-amber-50);
+  --selection-foreground: var(--color-amber-600);
+  --tooltip: var(--color-amber-400);
+  --tooltip-foreground: var(--color-amber-100);
+
+  --chart-1: var(--color-amber-50);
+  --chart-2: var(--color-amber-100);
+  --chart-3: var(--color-amber-200);
+  --chart-4: var(--color-amber-300);
+  --chart-5: var(--color-amber-400);
+  --chart-6: var(--color-amber-500);
+  --chart-7: var(--color-amber-600);
+  --chart-8: var(--color-amber-700);
+  --chart-9: var(--color-amber-800);
+  --chart-10: var(--color-amber-900);
+  --chart-11: var(--color-amber-950);
+
+  @variant dark {
+    --primary: var(--color-amber-500);
+    --primary-foreground: var(--color-amber-50);
+    --accent: var(--color-amber-950);
+    --accent-foreground: var(--color-amber-400);
+    --sidebar-accent: var(--color-amber-950);
+    --sidebar-accent-foreground: var(--color-amber-400);
+    --selection: var(--color-amber-950);
+    --selection-foreground: var(--color-amber-400);
+    --tooltip: var(--color-amber-800);
+    --tooltip-foreground: var(--color-amber-200);
+
+    --chart-1: var(--color-amber-50);
+    --chart-2: var(--color-amber-100);
+    --chart-3: var(--color-amber-200);
+    --chart-4: var(--color-amber-300);
+    --chart-5: var(--color-amber-400);
+    --chart-6: var(--color-amber-500);
+    --chart-7: var(--color-amber-600);
+    --chart-8: var(--color-amber-700);
+    --chart-9: var(--color-amber-800);
+    --chart-10: var(--color-amber-900);
+    --chart-11: var(--color-amber-950);
+  }
+}
+
+/* === Yellow ============================================================== */
+.theme-yellow {
+  --primary: var(--color-yellow-500);
+  --primary-foreground: var(--color-yellow-900);
+  --accent: var(--color-yellow-50);
+  --accent-foreground: var(--color-yellow-600);
+  --sidebar-accent: var(--color-yellow-50);
+  --sidebar-accent-foreground: var(--color-yellow-500);
+  --selection: var(--color-yellow-50);
+  --selection-foreground: var(--color-yellow-600);
+  --tooltip: var(--color-yellow-300);
+  --tooltip-foreground: var(--color-yellow-900);
+
+  --chart-1: var(--color-yellow-50);
+  --chart-2: var(--color-yellow-100);
+  --chart-3: var(--color-yellow-200);
+  --chart-4: var(--color-yellow-300);
+  --chart-5: var(--color-yellow-400);
+  --chart-6: var(--color-yellow-500);
+  --chart-7: var(--color-yellow-600);
+  --chart-8: var(--color-yellow-700);
+  --chart-9: var(--color-yellow-800);
+  --chart-10: var(--color-yellow-900);
+  --chart-11: var(--color-yellow-950);
+
+  @variant dark {
+    --primary: var(--color-yellow-500);
+    --primary-foreground: var(--color-yellow-900);
+    --accent: var(--color-yellow-950);
+    --accent-foreground: var(--color-yellow-400);
+    --sidebar-accent: var(--color-yellow-950);
+    --sidebar-accent-foreground: var(--color-yellow-400);
+    --selection: var(--color-yellow-950);
+    --selection-foreground: var(--color-yellow-400);
+    --tooltip: var(--color-yellow-800);
+    --tooltip-foreground: var(--color-yellow-100);
+
+    --chart-1: var(--color-yellow-50);
+    --chart-2: var(--color-yellow-100);
+    --chart-3: var(--color-yellow-200);
+    --chart-4: var(--color-yellow-300);
+    --chart-5: var(--color-yellow-400);
+    --chart-6: var(--color-yellow-500);
+    --chart-7: var(--color-yellow-600);
+    --chart-8: var(--color-yellow-700);
+    --chart-9: var(--color-yellow-800);
+    --chart-10: var(--color-yellow-900);
+    --chart-11: var(--color-yellow-950);
+  }
+}
+
+/* === Lime ================================================================ */
+.theme-lime {
+  --primary: var(--color-lime-600);
+  --primary-foreground: var(--color-lime-50);
+  --accent: var(--color-lime-50);
+  --accent-foreground: var(--color-lime-600);
+  --sidebar-accent: var(--color-lime-50);
+  --sidebar-accent-foreground: var(--color-lime-500);
+  --selection: var(--color-lime-50);
+  --selection-foreground: var(--color-lime-600);
+  --tooltip: var(--color-lime-300);
+  --tooltip-foreground: var(--color-lime-900);
+
+  --chart-1: var(--color-lime-50);
+  --chart-2: var(--color-lime-100);
+  --chart-3: var(--color-lime-200);
+  --chart-4: var(--color-lime-300);
+  --chart-5: var(--color-lime-400);
+  --chart-6: var(--color-lime-500);
+  --chart-7: var(--color-lime-600);
+  --chart-8: var(--color-lime-700);
+  --chart-9: var(--color-lime-800);
+  --chart-10: var(--color-lime-900);
+  --chart-11: var(--color-lime-950);
+
+  @variant dark {
+    --primary: var(--color-lime-500);
+    --primary-foreground: var(--color-lime-50);
+    --accent: var(--color-lime-950);
+    --accent-foreground: var(--color-lime-400);
+    --sidebar-accent: var(--color-lime-950);
+    --sidebar-accent-foreground: var(--color-lime-400);
+    --selection: var(--color-lime-950);
+    --selection-foreground: var(--color-lime-400);
+    --tooltip: var(--color-lime-800);
+    --tooltip-foreground: var(--color-lime-100);
+
+    --chart-1: var(--color-lime-50);
+    --chart-2: var(--color-lime-100);
+    --chart-3: var(--color-lime-200);
+    --chart-4: var(--color-lime-300);
+    --chart-5: var(--color-lime-400);
+    --chart-6: var(--color-lime-500);
+    --chart-7: var(--color-lime-600);
+    --chart-8: var(--color-lime-700);
+    --chart-9: var(--color-lime-800);
+    --chart-10: var(--color-lime-900);
+    --chart-11: var(--color-lime-950);
+  }
+}
+
+/* === Green ================================================================ */
+.theme-green {
+  --primary: var(--color-green-600);
+  --primary-foreground: var(--color-green-50);
+  --accent: var(--color-green-50);
+  --accent-foreground: var(--color-green-600);
+  --sidebar-accent: var(--color-green-50);
+  --sidebar-accent-foreground: var(--color-green-500);
+  --selection: var(--color-green-50);
+  --selection-foreground: var(--color-green-600);
+  --tooltip: var(--color-green-400);
+  --tooltip-foreground: var(--color-green-100);
+
+  --chart-1: var(--color-green-50);
+  --chart-2: var(--color-green-100);
+  --chart-3: var(--color-green-200);
+  --chart-4: var(--color-green-300);
+  --chart-5: var(--color-green-400);
+  --chart-6: var(--color-green-500);
+  --chart-7: var(--color-green-600);
+  --chart-8: var(--color-green-700);
+  --chart-9: var(--color-green-800);
+  --chart-10: var(--color-green-900);
+  --chart-11: var(--color-green-950);
+
+  @variant dark {
+    --primary: var(--color-green-500);
+    --primary-foreground: var(--color-green-50);
+    --accent: var(--color-green-950);
+    --accent-foreground: var(--color-green-400);
+    --sidebar-accent: var(--color-green-950);
+    --sidebar-accent-foreground: var(--color-green-400);
+    --selection: var(--color-green-950);
+    --selection-foreground: var(--color-green-400);
+    --tooltip: var(--color-green-800);
+    --tooltip-foreground: var(--color-green-200);
+
+    --chart-1: var(--color-green-50);
+    --chart-2: var(--color-green-100);
+    --chart-3: var(--color-green-200);
+    --chart-4: var(--color-green-300);
+    --chart-5: var(--color-green-400);
+    --chart-6: var(--color-green-500);
+    --chart-7: var(--color-green-600);
+    --chart-8: var(--color-green-700);
+    --chart-9: var(--color-green-800);
+    --chart-10: var(--color-green-900);
+    --chart-11: var(--color-green-950);
+  }
+}
+
+/* === Emerald ============================================================= */
+.theme-emerald {
+  --primary: var(--color-emerald-600);
+  --primary-foreground: var(--color-emerald-50);
+  --accent: var(--color-emerald-50);
+  --accent-foreground: var(--color-emerald-600);
+  --sidebar-accent: var(--color-emerald-50);
+  --sidebar-accent-foreground: var(--color-emerald-500);
+  --selection: var(--color-emerald-50);
+  --selection-foreground: var(--color-emerald-600);
+  --tooltip: var(--color-emerald-400);
+  --tooltip-foreground: var(--color-emerald-100);
+
+  --chart-1: var(--color-emerald-50);
+  --chart-2: var(--color-emerald-100);
+  --chart-3: var(--color-emerald-200);
+  --chart-4: var(--color-emerald-300);
+  --chart-5: var(--color-emerald-400);
+  --chart-6: var(--color-emerald-500);
+  --chart-7: var(--color-emerald-600);
+  --chart-8: var(--color-emerald-700);
+  --chart-9: var(--color-emerald-800);
+  --chart-10: var(--color-emerald-900);
+  --chart-11: var(--color-emerald-950);
+
+  @variant dark {
+    --primary: var(--color-emerald-500);
+    --primary-foreground: var(--color-emerald-50);
+    --accent: var(--color-emerald-950);
+    --accent-foreground: var(--color-emerald-400);
+    --sidebar-accent: var(--color-emerald-950);
+    --sidebar-accent-foreground: var(--color-emerald-400);
+    --selection: var(--color-emerald-950);
+    --selection-foreground: var(--color-emerald-400);
+    --tooltip: var(--color-emerald-400);
+    --tooltip-foreground: var(--color-emerald-200);
+
+    --chart-1: var(--color-emerald-50);
+    --chart-2: var(--color-emerald-100);
+    --chart-3: var(--color-emerald-200);
+    --chart-4: var(--color-emerald-300);
+    --chart-5: var(--color-emerald-400);
+    --chart-6: var(--color-emerald-500);
+    --chart-7: var(--color-emerald-600);
+    --chart-8: var(--color-emerald-700);
+    --chart-9: var(--color-emerald-800);
+    --chart-10: var(--color-emerald-900);
+    --chart-11: var(--color-emerald-950);
+  }
+}
+
+/* === Teal ================================================================= */
+.theme-teal {
+  --primary: var(--color-teal-600);
+  --primary-foreground: var(--color-teal-50);
+  --accent: var(--color-teal-50);
+  --accent-foreground: var(--color-teal-600);
+  --sidebar-accent: var(--color-teal-50);
+  --sidebar-accent-foreground: var(--color-teal-500);
+  --selection: var(--color-teal-50);
+  --selection-foreground: var(--color-teal-600);
+  --tooltip: var(--color-teal-400);
+  --tooltip-foreground: var(--color-teal-100);
+
+  --chart-1: var(--color-teal-50);
+  --chart-2: var(--color-teal-100);
+  --chart-3: var(--color-teal-200);
+  --chart-4: var(--color-teal-300);
+  --chart-5: var(--color-teal-400);
+  --chart-6: var(--color-teal-500);
+  --chart-7: var(--color-teal-600);
+  --chart-8: var(--color-teal-700);
+  --chart-9: var(--color-teal-800);
+  --chart-10: var(--color-teal-900);
+  --chart-11: var(--color-teal-950);
+
+  @variant dark {
+    --primary: var(--color-teal-500);
+    --primary-foreground: var(--color-teal-50);
+    --accent: var(--color-teal-950);
+    --accent-foreground: var(--color-teal-400);
+    --sidebar-accent: var(--color-teal-950);
+    --sidebar-accent-foreground: var(--color-teal-400);
+    --selection: var(--color-teal-950);
+    --selection-foreground: var(--color-teal-400);
+    --tooltip: var(--color-teal-400);
+    --tooltip-foreground: var(--color-teal-200);
+
+    --chart-1: var(--color-teal-50);
+    --chart-2: var(--color-teal-100);
+    --chart-3: var(--color-teal-200);
+    --chart-4: var(--color-teal-300);
+    --chart-5: var(--color-teal-400);
+    --chart-6: var(--color-teal-500);
+    --chart-7: var(--color-teal-600);
+    --chart-8: var(--color-teal-700);
+    --chart-9: var(--color-teal-800);
+    --chart-10: var(--color-teal-900);
+    --chart-11: var(--color-teal-950);
+  }
+}
+
+/* === Cyan ================================================================ */
+.theme-cyan {
+  --primary: var(--color-cyan-600);
+  --primary-foreground: var(--color-cyan-50);
+  --accent: var(--color-cyan-50);
+  --accent-foreground: var(--color-cyan-600);
+  --sidebar-accent: var(--color-cyan-50);
+  --sidebar-accent-foreground: var(--color-cyan-500);
+  --selection: var(--color-cyan-50);
+  --selection-foreground: var(--color-cyan-600);
+  --tooltip: var(--color-cyan-400);
+  --tooltip-foreground: var(--color-cyan-100);
+
+  --chart-1: var(--color-cyan-50);
+  --chart-2: var(--color-cyan-100);
+  --chart-3: var(--color-cyan-200);
+  --chart-4: var(--color-cyan-300);
+  --chart-5: var(--color-cyan-400);
+  --chart-6: var(--color-cyan-500);
+  --chart-7: var(--color-cyan-600);
+  --chart-8: var(--color-cyan-700);
+  --chart-9: var(--color-cyan-800);
+  --chart-10: var(--color-cyan-900);
+  --chart-11: var(--color-cyan-950);
+
+  @variant dark {
+    --primary: var(--color-cyan-500);
+    --primary-foreground: var(--color-cyan-50);
+    --accent: var(--color-cyan-950);
+    --accent-foreground: var(--color-cyan-400);
+    --sidebar-accent: var(--color-cyan-950);
+    --sidebar-accent-foreground: var(--color-cyan-400);
+    --selection: var(--color-cyan-950);
+    --selection-foreground: var(--color-cyan-400);
+    --tooltip: var(--color-cyan-400);
+    --tooltip-foreground: var(--color-cyan-200);
+
+    --chart-1: var(--color-cyan-50);
+    --chart-2: var(--color-cyan-100);
+    --chart-3: var(--color-cyan-200);
+    --chart-4: var(--color-cyan-300);
+    --chart-5: var(--color-cyan-400);
+    --chart-6: var(--color-cyan-500);
+    --chart-7: var(--color-cyan-600);
+    --chart-8: var(--color-cyan-700);
+    --chart-9: var(--color-cyan-800);
+    --chart-10: var(--color-cyan-900);
+    --chart-11: var(--color-cyan-950);
+  }
+}
+
+/* === Sky ================================================================= */
+.theme-sky {
+  --primary: var(--color-sky-600);
+  --primary-foreground: var(--color-sky-50);
+  --accent: var(--color-sky-50);
+  --accent-foreground: var(--color-sky-600);
+  --sidebar-accent: var(--color-sky-50);
+  --sidebar-accent-foreground: var(--color-sky-500);
+  --selection: var(--color-sky-50);
+  --selection-foreground: var(--color-sky-600);
+  --tooltip: var(--color-sky-400);
+  --tooltip-foreground: var(--color-sky-100);
+
+  --chart-1: var(--color-sky-50);
+  --chart-2: var(--color-sky-100);
+  --chart-3: var(--color-sky-200);
+  --chart-4: var(--color-sky-300);
+  --chart-5: var(--color-sky-400);
+  --chart-6: var(--color-sky-500);
+  --chart-7: var(--color-sky-600);
+  --chart-8: var(--color-sky-700);
+  --chart-9: var(--color-sky-800);
+  --chart-10: var(--color-sky-900);
+  --chart-11: var(--color-sky-950);
+
+  @variant dark {
+    --primary: var(--color-sky-500);
+    --primary-foreground: var(--color-sky-50);
+    --accent: var(--color-sky-950);
+    --accent-foreground: var(--color-sky-400);
+    --sidebar-accent: var(--color-sky-950);
+    --sidebar-accent-foreground: var(--color-sky-400);
+    --selection: var(--color-sky-950);
+    --selection-foreground: var(--color-sky-400);
+    --tooltip: var(--color-sky-400);
+    --tooltip-foreground: var(--color-sky-200);
+
+    --chart-1: var(--color-sky-50);
+    --chart-2: var(--color-sky-100);
+    --chart-3: var(--color-sky-200);
+    --chart-4: var(--color-sky-300);
+    --chart-5: var(--color-sky-400);
+    --chart-6: var(--color-sky-500);
+    --chart-7: var(--color-sky-600);
+    --chart-8: var(--color-sky-700);
+    --chart-9: var(--color-sky-800);
+    --chart-10: var(--color-sky-900);
+    --chart-11: var(--color-sky-950);
+  }
+}
+
+/* === Blue ================================================================= */
+.theme-blue {
+  --primary: var(--color-blue-600);
+  --primary-foreground: var(--color-blue-50);
+  --accent: var(--color-blue-50);
+  --accent-foreground: var(--color-blue-600);
+  --sidebar-accent: var(--color-blue-50);
+  --sidebar-accent-foreground: var(--color-blue-500);
+  --selection: var(--color-blue-50);
+  --selection-foreground: var(--color-blue-600);
+  --tooltip: var(--color-blue-400);
+  --tooltip-foreground: var(--color-blue-100);
+
+  --chart-1: var(--color-blue-50);
+  --chart-2: var(--color-blue-100);
+  --chart-3: var(--color-blue-200);
+  --chart-4: var(--color-blue-300);
+  --chart-5: var(--color-blue-400);
+  --chart-6: var(--color-blue-500);
+  --chart-7: var(--color-blue-600);
+  --chart-8: var(--color-blue-700);
+  --chart-9: var(--color-blue-800);
+  --chart-10: var(--color-blue-900);
+  --chart-11: var(--color-blue-950);
+
+  @variant dark {
+    --primary: var(--color-blue-500);
+    --primary-foreground: var(--color-blue-50);
+    --accent: var(--color-blue-950);
+    --accent-foreground: var(--color-blue-400);
+    --sidebar-accent: var(--color-blue-950);
+    --sidebar-accent-foreground: var(--color-blue-400);
+    --selection: var(--color-blue-950);
+    --selection-foreground: var(--color-blue-400);
+    --tooltip: var(--color-blue-800);
+    --tooltip-foreground: var(--color-blue-200);
+
+    --chart-1: var(--color-blue-50);
+    --chart-2: var(--color-blue-100);
+    --chart-3: var(--color-blue-200);
+    --chart-4: var(--color-blue-300);
+    --chart-5: var(--color-blue-400);
+    --chart-6: var(--color-blue-500);
+    --chart-7: var(--color-blue-600);
+    --chart-8: var(--color-blue-700);
+    --chart-9: var(--color-blue-800);
+    --chart-10: var(--color-blue-900);
+    --chart-11: var(--color-blue-950);
+  }
+}
+
+/* === Indigo ============================================================== */
+.theme-indigo {
+  --primary: var(--color-indigo-600);
+  --primary-foreground: var(--color-indigo-50);
+  --accent: var(--color-indigo-50);
+  --accent-foreground: var(--color-indigo-600);
+  --sidebar-accent: var(--color-indigo-50);
+  --sidebar-accent-foreground: var(--color-indigo-500);
+  --selection: var(--color-indigo-50);
+  --selection-foreground: var(--color-indigo-600);
+  --tooltip: var(--color-indigo-400);
+  --tooltip-foreground: var(--color-indigo-100);
+
+  --chart-1: var(--color-indigo-50);
+  --chart-2: var(--color-indigo-100);
+  --chart-3: var(--color-indigo-200);
+  --chart-4: var(--color-indigo-300);
+  --chart-5: var(--color-indigo-400);
+  --chart-6: var(--color-indigo-500);
+  --chart-7: var(--color-indigo-600);
+  --chart-8: var(--color-indigo-700);
+  --chart-9: var(--color-indigo-800);
+  --chart-10: var(--color-indigo-900);
+  --chart-11: var(--color-indigo-950);
+
+  @variant dark {
+    --primary: var(--color-indigo-500);
+    --primary-foreground: var(--color-indigo-50);
+    --accent: var(--color-indigo-950);
+    --accent-foreground: var(--color-indigo-400);
+    --sidebar-accent: var(--color-indigo-950);
+    --sidebar-accent-foreground: var(--color-indigo-400);
+    --selection: var(--color-indigo-950);
+    --selection-foreground: var(--color-indigo-400);
+    --tooltip: var(--color-indigo-400);
+    --tooltip-foreground: var(--color-indigo-200);
+
+    --chart-1: var(--color-indigo-50);
+    --chart-2: var(--color-indigo-100);
+    --chart-3: var(--color-indigo-200);
+    --chart-4: var(--color-indigo-300);
+    --chart-5: var(--color-indigo-400);
+    --chart-6: var(--color-indigo-500);
+    --chart-7: var(--color-indigo-600);
+    --chart-8: var(--color-indigo-700);
+    --chart-9: var(--color-indigo-800);
+    --chart-10: var(--color-indigo-900);
+    --chart-11: var(--color-indigo-950);
+  }
+}
+
+/* === Violet ============================================================== */
+.theme-violet {
+  --primary: var(--color-violet-600);
+  --primary-foreground: var(--color-violet-50);
+  --accent: var(--color-violet-50);
+  --accent-foreground: var(--color-violet-600);
+  --sidebar-accent: var(--color-violet-50);
+  --sidebar-accent-foreground: var(--color-violet-500);
+  --selection: var(--color-violet-50);
+  --selection-foreground: var(--color-violet-600);
+  --tooltip: var(--color-violet-400);
+  --tooltip-foreground: var(--color-violet-100);
+
+  --chart-1: var(--color-violet-50);
+  --chart-2: var(--color-violet-100);
+  --chart-3: var(--color-violet-200);
+  --chart-4: var(--color-violet-300);
+  --chart-5: var(--color-violet-400);
+  --chart-6: var(--color-violet-500);
+  --chart-7: var(--color-violet-600);
+  --chart-8: var(--color-violet-700);
+  --chart-9: var(--color-violet-800);
+  --chart-10: var(--color-violet-900);
+  --chart-11: var(--color-violet-950);
+
+  @variant dark {
+    --primary: var(--color-violet-500);
+    --primary-foreground: var(--color-violet-50);
+    --accent: var(--color-violet-950);
+    --accent-foreground: var(--color-violet-400);
+    --sidebar-accent: var(--color-violet-950);
+    --sidebar-accent-foreground: var(--color-violet-400);
+    --selection: var(--color-violet-950);
+    --selection-foreground: var(--color-violet-400);
+    --tooltip: var(--color-violet-400);
+    --tooltip-foreground: var(--color-violet-200);
+
+    --chart-1: var(--color-violet-50);
+    --chart-2: var(--color-violet-100);
+    --chart-3: var(--color-violet-200);
+    --chart-4: var(--color-violet-300);
+    --chart-5: var(--color-violet-400);
+    --chart-6: var(--color-violet-500);
+    --chart-7: var(--color-violet-600);
+    --chart-8: var(--color-violet-700);
+    --chart-9: var(--color-violet-800);
+    --chart-10: var(--color-violet-900);
+    --chart-11: var(--color-violet-950);
+  }
+}
+
+/* === Purple ============================================================== */
+.theme-purple {
+  --primary: var(--color-purple-600);
+  --primary-foreground: var(--color-purple-50);
+  --accent: var(--color-purple-50);
+  --accent-foreground: var(--color-purple-600);
+  --sidebar-accent: var(--color-purple-50);
+  --sidebar-accent-foreground: var(--color-purple-500);
+  --selection: var(--color-purple-50);
+  --selection-foreground: var(--color-purple-600);
+  --tooltip: var(--color-purple-400);
+  --tooltip-foreground: var(--color-purple-100);
+
+  --chart-1: var(--color-purple-50);
+  --chart-2: var(--color-purple-100);
+  --chart-3: var(--color-purple-200);
+  --chart-4: var(--color-purple-300);
+  --chart-5: var(--color-purple-400);
+  --chart-6: var(--color-purple-500);
+  --chart-7: var(--color-purple-600);
+  --chart-8: var(--color-purple-700);
+  --chart-9: var(--color-purple-800);
+  --chart-10: var(--color-purple-900);
+  --chart-11: var(--color-purple-950);
+
+  @variant dark {
+    --primary: var(--color-purple-500);
+    --primary-foreground: var(--color-purple-50);
+    --accent: var(--color-purple-950);
+    --accent-foreground: var(--color-purple-400);
+    --sidebar-accent: var(--color-purple-950);
+    --sidebar-accent-foreground: var(--color-purple-400);
+    --selection: var(--color-purple-950);
+    --selection-foreground: var(--color-purple-400);
+    --tooltip: var(--color-purple-400);
+    --tooltip-foreground: var(--color-purple-200);
+
+    --chart-1: var(--color-purple-50);
+    --chart-2: var(--color-purple-100);
+    --chart-3: var(--color-purple-200);
+    --chart-4: var(--color-purple-300);
+    --chart-5: var(--color-purple-400);
+    --chart-6: var(--color-purple-500);
+    --chart-7: var(--color-purple-600);
+    --chart-8: var(--color-purple-700);
+    --chart-9: var(--color-purple-800);
+    --chart-10: var(--color-purple-900);
+    --chart-11: var(--color-purple-950);
+  }
+}
+
+/* === Fuchsia ============================================================= */
+.theme-fuchsia {
+  --primary: var(--color-fuchsia-600);
+  --primary-foreground: var(--color-fuchsia-50);
+  --accent: var(--color-fuchsia-50);
+  --accent-foreground: var(--color-fuchsia-600);
+  --sidebar-accent: var(--color-fuchsia-50);
+  --sidebar-accent-foreground: var(--color-fuchsia-500);
+  --selection: var(--color-fuchsia-50);
+  --selection-foreground: var(--color-fuchsia-600);
+  --tooltip: var(--color-fuchsia-400);
+  --tooltip-foreground: var(--color-fuchsia-100);
+
+  --chart-1: var(--color-fuchsia-50);
+  --chart-2: var(--color-fuchsia-100);
+  --chart-3: var(--color-fuchsia-200);
+  --chart-4: var(--color-fuchsia-300);
+  --chart-5: var(--color-fuchsia-400);
+  --chart-6: var(--color-fuchsia-500);
+  --chart-7: var(--color-fuchsia-600);
+  --chart-8: var(--color-fuchsia-700);
+  --chart-9: var(--color-fuchsia-800);
+  --chart-10: var(--color-fuchsia-900);
+  --chart-11: var(--color-fuchsia-950);
+
+  @variant dark {
+    --primary: var(--color-fuchsia-500);
+    --primary-foreground: var(--color-fuchsia-50);
+    --accent: var(--color-fuchsia-950);
+    --accent-foreground: var(--color-fuchsia-400);
+    --sidebar-accent: var(--color-fuchsia-950);
+    --sidebar-accent-foreground: var(--color-fuchsia-400);
+    --selection: var(--color-fuchsia-950);
+    --selection-foreground: var(--color-fuchsia-400);
+    --tooltip: var(--color-fuchsia-400);
+    --tooltip-foreground: var(--color-fuchsia-200);
+
+    --chart-1: var(--color-fuchsia-50);
+    --chart-2: var(--color-fuchsia-100);
+    --chart-3: var(--color-fuchsia-200);
+    --chart-4: var(--color-fuchsia-300);
+    --chart-5: var(--color-fuchsia-400);
+    --chart-6: var(--color-fuchsia-500);
+    --chart-7: var(--color-fuchsia-600);
+    --chart-8: var(--color-fuchsia-700);
+    --chart-9: var(--color-fuchsia-800);
+    --chart-10: var(--color-fuchsia-900);
+    --chart-11: var(--color-fuchsia-950);
+  }
+}
+
+/* === Pink ================================================================ */
+.theme-pink {
+  --primary: var(--color-pink-600);
+  --primary-foreground: var(--color-pink-50);
+  --accent: var(--color-pink-50);
+  --accent-foreground: var(--color-pink-600);
+  --sidebar-accent: var(--color-pink-50);
+  --sidebar-accent-foreground: var(--color-pink-500);
+  --selection: var(--color-pink-50);
+  --selection-foreground: var(--color-pink-600);
+  --tooltip: var(--color-pink-400);
+  --tooltip-foreground: var(--color-pink-100);
+
+  --chart-1: var(--color-pink-50);
+  --chart-2: var(--color-pink-100);
+  --chart-3: var(--color-pink-200);
+  --chart-4: var(--color-pink-300);
+  --chart-5: var(--color-pink-400);
+  --chart-6: var(--color-pink-500);
+  --chart-7: var(--color-pink-600);
+  --chart-8: var(--color-pink-700);
+  --chart-9: var(--color-pink-800);
+  --chart-10: var(--color-pink-900);
+  --chart-11: var(--color-pink-950);
+
+  @variant dark {
+    --primary: var(--color-pink-500);
+    --primary-foreground: var(--color-pink-50);
+    --accent: var(--color-pink-950);
+    --accent-foreground: var(--color-pink-400);
+    --sidebar-accent: var(--color-pink-950);
+    --sidebar-accent-foreground: var(--color-pink-400);
+    --selection: var(--color-pink-950);
+    --selection-foreground: var(--color-pink-400);
+    --tooltip: var(--color-pink-400);
+    --tooltip-foreground: var(--color-pink-200);
+
+    --chart-1: var(--color-pink-50);
+    --chart-2: var(--color-pink-100);
+    --chart-3: var(--color-pink-200);
+    --chart-4: var(--color-pink-300);
+    --chart-5: var(--color-pink-400);
+    --chart-6: var(--color-pink-500);
+    --chart-7: var(--color-pink-600);
+    --chart-8: var(--color-pink-700);
+    --chart-9: var(--color-pink-800);
+    --chart-10: var(--color-pink-900);
+    --chart-11: var(--color-pink-950);
+  }
+}
+
+/* === Rose ================================================================= */
+.theme-rose {
+  --primary: var(--color-rose-600);
+  --primary-foreground: var(--color-rose-50);
+  --accent: var(--color-rose-50);
+  --accent-foreground: var(--color-rose-600);
+  --sidebar-accent: var(--color-rose-50);
+  --sidebar-accent-foreground: var(--color-rose-500);
+  --selection: var(--color-rose-50);
+  --selection-foreground: var(--color-rose-600);
+  --tooltip: var(--color-rose-400);
+  --tooltip-foreground: var(--color-rose-100);
+
+  --chart-1: var(--color-rose-50);
+  --chart-2: var(--color-rose-100);
+  --chart-3: var(--color-rose-200);
+  --chart-4: var(--color-rose-300);
+  --chart-5: var(--color-rose-400);
+  --chart-6: var(--color-rose-500);
+  --chart-7: var(--color-rose-600);
+  --chart-8: var(--color-rose-700);
+  --chart-9: var(--color-rose-800);
+  --chart-10: var(--color-rose-900);
+  --chart-11: var(--color-rose-950);
+
+  @variant dark {
+    --primary: var(--color-rose-500);
+    --primary-foreground: var(--color-rose-50);
+    --accent: var(--color-rose-950);
+    --accent-foreground: var(--color-rose-400);
+    --sidebar-accent: var(--color-rose-950);
+    --sidebar-accent-foreground: var(--color-rose-400);
+    --selection: var(--color-rose-950);
+    --selection-foreground: var(--color-rose-400);
+    --tooltip: var(--color-rose-400);
+    --tooltip-foreground: var(--color-rose-200);
+
+    --chart-1: var(--color-rose-50);
+    --chart-2: var(--color-rose-100);
+    --chart-3: var(--color-rose-200);
+    --chart-4: var(--color-rose-300);
+    --chart-5: var(--color-rose-400);
+    --chart-6: var(--color-rose-500);
+    --chart-7: var(--color-rose-600);
+    --chart-8: var(--color-rose-700);
+    --chart-9: var(--color-rose-800);
+    --chart-10: var(--color-rose-900);
+    --chart-11: var(--color-rose-950);
+  }
+}
+
+/* === Slate =============================================================== */
+.theme-slate {
+  --primary: var(--color-slate-600);
+  --primary-foreground: var(--color-slate-50);
+  --accent: var(--color-slate-50);
+  --accent-foreground: var(--color-slate-600);
+  --sidebar-accent: var(--color-slate-50);
+  --sidebar-accent-foreground: var(--color-slate-500);
+  --selection: var(--color-slate-50);
+  --selection-foreground: var(--color-slate-600);
+  --tooltip: var(--color-slate-400);
+  --tooltip-foreground: var(--color-slate-100);
+
+  --chart-1: var(--color-slate-50);
+  --chart-2: var(--color-slate-100);
+  --chart-3: var(--color-slate-200);
+  --chart-4: var(--color-slate-300);
+  --chart-5: var(--color-slate-400);
+  --chart-6: var(--color-slate-500);
+  --chart-7: var(--color-slate-600);
+  --chart-8: var(--color-slate-700);
+  --chart-9: var(--color-slate-800);
+  --chart-10: var(--color-slate-900);
+  --chart-11: var(--color-slate-950);
+
+  @variant dark {
+    --primary: var(--color-slate-500);
+    --primary-foreground: var(--color-slate-50);
+    --accent: var(--color-slate-950);
+    --accent-foreground: var(--color-slate-400);
+    --sidebar-accent: var(--color-slate-950);
+    --sidebar-accent-foreground: var(--color-slate-400);
+    --selection: var(--color-slate-950);
+    --selection-foreground: var(--color-slate-400);
+    --tooltip: var(--color-slate-400);
+    --tooltip-foreground: var(--color-slate-200);
+
+    --chart-1: var(--color-slate-50);
+    --chart-2: var(--color-slate-100);
+    --chart-3: var(--color-slate-200);
+    --chart-4: var(--color-slate-300);
+    --chart-5: var(--color-slate-400);
+    --chart-6: var(--color-slate-500);
+    --chart-7: var(--color-slate-600);
+    --chart-8: var(--color-slate-700);
+    --chart-9: var(--color-slate-800);
+    --chart-10: var(--color-slate-900);
+    --chart-11: var(--color-slate-950);
+  }
+}
+
+/* === Gray ================================================================ */
+.theme-gray {
+  --primary: var(--color-gray-600);
+  --primary-foreground: var(--color-gray-50);
+  --accent: var(--color-gray-50);
+  --accent-foreground: var(--color-gray-600);
+  --sidebar-accent: var(--color-gray-50);
+  --sidebar-accent-foreground: var(--color-gray-500);
+  --selection: var(--color-gray-50);
+  --selection-foreground: var(--color-gray-600);
+  --tooltip: var(--color-gray-400);
+  --tooltip-foreground: var(--color-gray-100);
+
+  --chart-1: var(--color-gray-50);
+  --chart-2: var(--color-gray-100);
+  --chart-3: var(--color-gray-200);
+  --chart-4: var(--color-gray-300);
+  --chart-5: var(--color-gray-400);
+  --chart-6: var(--color-gray-500);
+  --chart-7: var(--color-gray-600);
+  --chart-8: var(--color-gray-700);
+  --chart-9: var(--color-gray-800);
+  --chart-10: var(--color-gray-900);
+  --chart-11: var(--color-gray-950);
+
+  @variant dark {
+    --primary: var(--color-gray-500);
+    --primary-foreground: var(--color-gray-50);
+    --accent: var(--color-gray-950);
+    --accent-foreground: var(--color-gray-400);
+    --sidebar-accent: var(--color-gray-950);
+    --sidebar-accent-foreground: var(--color-gray-400);
+    --selection: var(--color-gray-950);
+    --selection-foreground: var(--color-gray-400);
+    --tooltip: var(--color-gray-400);
+    --tooltip-foreground: var(--color-gray-200);
+
+    --chart-1: var(--color-gray-50);
+    --chart-2: var(--color-gray-100);
+    --chart-3: var(--color-gray-200);
+    --chart-4: var(--color-gray-300);
+    --chart-5: var(--color-gray-400);
+    --chart-6: var(--color-gray-500);
+    --chart-7: var(--color-gray-600);
+    --chart-8: var(--color-gray-700);
+    --chart-9: var(--color-gray-800);
+    --chart-10: var(--color-gray-900);
+    --chart-11: var(--color-gray-950);
+  }
+}
+
+/* === Neutral ============================================================= */
+.theme-neutral {
+  --primary: var(--color-neutral-600);
+  --primary-foreground: var(--color-neutral-50);
+  --accent: var(--color-neutral-50);
+  --accent-foreground: var(--color-neutral-600);
+  --sidebar-accent: var(--color-neutral-50);
+  --sidebar-accent-foreground: var(--color-neutral-500);
+  --selection: var(--color-neutral-50);
+  --selection-foreground: var(--color-neutral-600);
+  --tooltip: var(--color-neutral-400);
+  --tooltip-foreground: var(--color-neutral-100);
+
+  --chart-1: var(--color-neutral-50);
+  --chart-2: var(--color-neutral-100);
+  --chart-3: var(--color-neutral-200);
+  --chart-4: var(--color-neutral-300);
+  --chart-5: var(--color-neutral-400);
+  --chart-6: var(--color-neutral-500);
+  --chart-7: var(--color-neutral-600);
+  --chart-8: var(--color-neutral-700);
+  --chart-9: var(--color-neutral-800);
+  --chart-10: var(--color-neutral-900);
+  --chart-11: var(--color-neutral-950);
+
+  @variant dark {
+    --primary: var(--color-neutral-500);
+    --primary-foreground: var(--color-neutral-50);
+    --accent: var(--color-neutral-950);
+    --accent-foreground: var(--color-neutral-400);
+    --sidebar-accent: var(--color-neutral-950);
+    --sidebar-accent-foreground: var(--color-neutral-400);
+    --selection: var(--color-neutral-950);
+    --selection-foreground: var(--color-neutral-400);
+    --tooltip: var(--color-neutral-400);
+    --tooltip-foreground: var(--color-neutral-200);
+
+    --chart-1: var(--color-neutral-50);
+    --chart-2: var(--color-neutral-100);
+    --chart-3: var(--color-neutral-200);
+    --chart-4: var(--color-neutral-300);
+    --chart-5: var(--color-neutral-400);
+    --chart-6: var(--color-neutral-500);
+    --chart-7: var(--color-neutral-600);
+    --chart-8: var(--color-neutral-700);
+    --chart-9: var(--color-neutral-800);
+    --chart-10: var(--color-neutral-900);
+    --chart-11: var(--color-neutral-950);
+  }
+}
+
+/* === Zinc ================================================================ */
+.theme-zinc {
+  --primary: var(--color-zinc-600);
+  --primary-foreground: var(--color-zinc-50);
+  --accent: var(--color-zinc-50);
+  --accent-foreground: var(--color-zinc-600);
+  --sidebar-accent: var(--color-zinc-50);
+  --sidebar-accent-foreground: var(--color-zinc-500);
+  --selection: var(--color-zinc-50);
+  --selection-foreground: var(--color-zinc-600);
+  --tooltip: var(--color-zinc-400);
+  --tooltip-foreground: var(--color-zinc-100);
+
+  --chart-1: var(--color-zinc-50);
+  --chart-2: var(--color-zinc-100);
+  --chart-3: var(--color-zinc-200);
+  --chart-4: var(--color-zinc-300);
+  --chart-5: var(--color-zinc-400);
+  --chart-6: var(--color-zinc-500);
+  --chart-7: var(--color-zinc-600);
+  --chart-8: var(--color-zinc-700);
+  --chart-9: var(--color-zinc-800);
+  --chart-10: var(--color-zinc-900);
+  --chart-11: var(--color-zinc-950);
+
+  @variant dark {
+    --primary: var(--color-zinc-500);
+    --primary-foreground: var(--color-zinc-50);
+    --accent: var(--color-zinc-950);
+    --accent-foreground: var(--color-zinc-400);
+    --sidebar-accent: var(--color-zinc-950);
+    --sidebar-accent-foreground: var(--color-zinc-400);
+    --selection: var(--color-zinc-950);
+    --selection-foreground: var(--color-zinc-400);
+    --tooltip: var(--color-zinc-400);
+    --tooltip-foreground: var(--color-zinc-200);
+
+    --chart-1: var(--color-zinc-50);
+    --chart-2: var(--color-zinc-100);
+    --chart-3: var(--color-zinc-200);
+    --chart-4: var(--color-zinc-300);
+    --chart-5: var(--color-zinc-400);
+    --chart-6: var(--color-zinc-500);
+    --chart-7: var(--color-zinc-600);
+    --chart-8: var(--color-zinc-700);
+    --chart-9: var(--color-zinc-800);
+    --chart-10: var(--color-zinc-900);
+    --chart-11: var(--color-zinc-950);
+  }
+}
+
+/* === Stone =============================================================== */
+.theme-stone {
+  --primary: var(--color-stone-600);
+  --primary-foreground: var(--color-stone-50);
+  --accent: var(--color-stone-50);
+  --accent-foreground: var(--color-stone-600);
+  --sidebar-accent: var(--color-stone-50);
+  --sidebar-accent-foreground: var(--color-stone-500);
+  --selection: var(--color-stone-50);
+  --selection-foreground: var(--color-stone-600);
+  --tooltip: var(--color-stone-400);
+  --tooltip-foreground: var(--color-stone-100);
+
+  --chart-1: var(--color-stone-50);
+  --chart-2: var(--color-stone-100);
+  --chart-3: var(--color-stone-200);
+  --chart-4: var(--color-stone-300);
+  --chart-5: var(--color-stone-400);
+  --chart-6: var(--color-stone-500);
+  --chart-7: var(--color-stone-600);
+  --chart-8: var(--color-stone-700);
+  --chart-9: var(--color-stone-800);
+  --chart-10: var(--color-stone-900);
+  --chart-11: var(--color-stone-950);
+
+  @variant dark {
+    --primary: var(--color-stone-500);
+    --primary-foreground: var(--color-stone-50);
+    --accent: var(--color-stone-950);
+    --accent-foreground: var(--color-stone-400);
+    --sidebar-accent: var(--color-stone-950);
+    --sidebar-accent-foreground: var(--color-stone-400);
+    --selection: var(--color-stone-950);
+    --selection-foreground: var(--color-stone-400);
+    --tooltip: var(--color-stone-400);
+    --tooltip-foreground: var(--color-stone-200);
+
+    --chart-1: var(--color-stone-50);
+    --chart-2: var(--color-stone-100);
+    --chart-3: var(--color-stone-200);
+    --chart-4: var(--color-stone-300);
+    --chart-5: var(--color-stone-400);
+    --chart-6: var(--color-stone-500);
+    --chart-7: var(--color-stone-600);
+    --chart-8: var(--color-stone-700);
+    --chart-9: var(--color-stone-800);
+    --chart-10: var(--color-stone-900);
+    --chart-11: var(--color-stone-950);
+  }
+}
+
+/* === Mono (Stone) ========================================================= */
+.theme-mono {
+  --primary: var(--color-stone-600);
+  --primary-foreground: var(--color-stone-50);
+  --accent: var(--color-stone-50);
+  --accent-foreground: var(--color-stone-600);
+  --sidebar-accent: var(--color-stone-50);
+  --sidebar-accent-foreground: var(--color-stone-500);
+  --selection: var(--color-stone-50);
+  --selection-foreground: var(--color-stone-600);
+  --tooltip: var(--color-stone-400);
+  --tooltip-foreground: var(--color-stone-100);
+
+  --chart-1: var(--color-stone-50);
+  --chart-2: var(--color-stone-100);
+  --chart-3: var(--color-stone-200);
+  --chart-4: var(--color-stone-300);
+  --chart-5: var(--color-stone-400);
+  --chart-6: var(--color-stone-500);
+  --chart-7: var(--color-stone-600);
+  --chart-8: var(--color-stone-700);
+  --chart-9: var(--color-stone-800);
+  --chart-10: var(--color-stone-900);
+  --chart-11: var(--color-stone-950);
+
+  @variant dark {
+    --primary: var(--color-stone-500);
+    --primary-foreground: var(--color-stone-50);
+    --accent: var(--color-stone-950);
+    --accent-foreground: var(--color-stone-400);
+    --sidebar-accent: var(--color-stone-950);
+    --sidebar-accent-foreground: var(--color-stone-400);
+    --selection: var(--color-stone-950);
+    --selection-foreground: var(--color-stone-400);
+    --tooltip: var(--color-stone-400);
+    --tooltip-foreground: var(--color-stone-200);
+
+    --chart-1: var(--color-stone-50);
+    --chart-2: var(--color-stone-100);
+    --chart-3: var(--color-stone-200);
+    --chart-4: var(--color-stone-300);
+    --chart-5: var(--color-stone-400);
+    --chart-6: var(--color-stone-500);
+    --chart-7: var(--color-stone-600);
+    --chart-8: var(--color-stone-700);
+    --chart-9: var(--color-stone-800);
+    --chart-10: var(--color-stone-900);
+    --chart-11: var(--color-stone-950);
+  }
+}
+
+/* === Scaled (Blue base + tighter radii elsewhere in app, not here) ======= */
+.theme-scaled {
+  --primary: var(--color-blue-600);
+  --primary-foreground: var(--color-blue-50);
+  --accent: var(--color-blue-50);
+  --accent-foreground: var(--color-blue-600);
+  --sidebar-accent: var(--color-blue-50);
+  --sidebar-accent-foreground: var(--color-blue-500);
+  --selection: var(--color-blue-50);
+  --selection-foreground: var(--color-blue-600);
+  --tooltip: var(--color-blue-400);
+  --tooltip-foreground: var(--color-blue-100);
+
+  --chart-1: var(--color-blue-50);
+  --chart-2: var(--color-blue-100);
+  --chart-3: var(--color-blue-200);
+  --chart-4: var(--color-blue-300);
+  --chart-5: var(--color-blue-400);
+  --chart-6: var(--color-blue-500);
+  --chart-7: var(--color-blue-600);
+  --chart-8: var(--color-blue-700);
+  --chart-9: var(--color-blue-800);
+  --chart-10: var(--color-blue-900);
+  --chart-11: var(--color-blue-950);
+
+  @variant dark {
+    --primary: var(--color-blue-500);
+    --primary-foreground: var(--color-blue-50);
+    --accent: var(--color-blue-950);
+    --accent-foreground: var(--color-blue-400);
+    --sidebar-accent: var(--color-blue-950);
+    --sidebar-accent-foreground: var(--color-blue-400);
+    --selection: var(--color-blue-950);
+    --selection-foreground: var(--color-blue-400);
+    --tooltip: var(--color-blue-400);
+    --tooltip-foreground: var(--color-blue-200);
+
+    --chart-1: var(--color-blue-50);
+    --chart-2: var(--color-blue-100);
+    --chart-3: var(--color-blue-200);
+    --chart-4: var(--color-blue-300);
+    --chart-5: var(--color-blue-400);
+    --chart-6: var(--color-blue-500);
+    --chart-7: var(--color-blue-600);
+    --chart-8: var(--color-blue-700);
+    --chart-9: var(--color-blue-800);
+    --chart-10: var(--color-blue-900);
+    --chart-11: var(--color-blue-950);
+  }
+}

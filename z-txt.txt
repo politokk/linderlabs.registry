@@ -1,0 +1,33 @@
+git add .
+git commit -m "globals"
+git push origin main    
+git push origin main --force
+
+git reset --hard 2d877ea
+https://github.com/politokk/linderlabs.registry.git
+node --version
+which node
+nvm list
+nvm use 22.18.0
+
+pnpm registry:build
+pnpm build
+
+rm -rf .next
+
+
+echo "# s" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/politokk/linderlabs.registry.git
+
+git push -u origin main
+
+pnpm add next@canary
+
+lsof -i :4000
+lsof -i :3000
+
+kill -9 69066
