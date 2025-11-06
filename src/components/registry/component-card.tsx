@@ -53,7 +53,7 @@ export function ComponentCard({
 
   return (
     <section>
-      <Card id="starting-kit" className="border-border py-2 gap-4">
+      <Card id="starting-kit" className="border-border pt-2 pb-0 gap-0">
         <CardHeader className="border-b [.border-b]:pb-0">
           <div className="flex flex-col gap-4">
         
@@ -98,7 +98,7 @@ export function ComponentCard({
           </div>
         </CardHeader>
 
-        <CardContent className="flex flex-col items-center justify-center gap-4 px-4">
+        <CardContent className="flex flex-col items-center justify-center gap-4 px-0">
           <div
             className={
               "h-[800px] w-full overflow-hidden p-0"
