@@ -95,6 +95,39 @@
       ]
     },
     {
+      "name": "sidebar",
+      "type": "registry:block",
+      "title": "Sidebar",
+      "icon": "Sidebar",
+      "description": "A sidebar component that allows users to select an option from a list of options.",
+      "registryDependencies": [
+        "sidebar",
+        "https://linderlabs-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/app/demo/[name]/blocks/sidebar/page.tsx",
+          "type": "registry:page",
+          "target": "app/page.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/blocks/sidebar/components/app-sidebar.tsx",
+          "type": "registry:component",
+          "target": "app/components/app-sidebar.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/blocks/sidebar/components/nav-main.tsx",
+          "type": "registry:component",
+          "target": "app/components/nav-main.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/blocks/sidebar/components/nav-projects.tsx",
+          "type": "registry:component",
+          "target": "app/components/nav-projects.tsx"
+        }
+      ]
+    },
+    {
       "name": "blank",
       "type": "registry:block",
       "title": "Blank",
@@ -151,13 +184,13 @@
       "icon": "PanelTop",
       "description": "A styled, simple, reusable header",
       "registryDependencies": [
+        "button",
+        "input",
+        "avatar",
         "sidebar",
         "https://linderlabs-registry.vercel.app/r/sonner.json",
         "https://linderlabs-registry.vercel.app/r/logo.json",
-        "https://linderlabs-registry.vercel.app/r/theme.json",
-        "https://linderlabs-registry.vercel.app/r/button.json",
-        "https://linderlabs-registry.vercel.app/r/input.json",
-        "https://linderlabs-registry.vercel.app/r/avatar.json"
+        "https://linderlabs-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -183,11 +216,11 @@
       "icon": "Sidebar",
       "description": "A styled, simple, reusable sidebar",
       "registryDependencies": [
+        "badge",
+        "button",
         "sidebar",
         "https://linderlabs-registry.vercel.app/r/sonner.json",
-        "https://linderlabs-registry.vercel.app/r/theme.json",
-        "https://linderlabs-registry.vercel.app/r/badge.json",
-        "https://linderlabs-registry.vercel.app/r/button.json"
+        "https://linderlabs-registry.vercel.app/r/theme.json"
       ],
       "files": [
         {
@@ -461,8 +494,7 @@
         },
         {
           "path": "src/components/ui/button.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/button.tsx"
+          "type": "registry:ui"
         }
       ]
     },
@@ -1306,29 +1338,6 @@
         {
           "path": "src/components/ui/slider.tsx",
           "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "sidebar",
-      "type": "registry:ui",
-      "title": "Sidebar",
-      "icon": "Sidebar",
-      "description": "A sidebar component that allows users to select an option from a list of options.",
-      "registryDependencies": [
-        "sidebar",
-        "https://linderlabs-registry.vercel.app/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "src/layouts/shell-layout.tsx",
-          "type": "registry:file",
-          "target": "app/layout.tsx"
-        },
-        {
-          "path": "src/components/ui/sidebar.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/sidebar.tsx"
         }
       ]
     },
