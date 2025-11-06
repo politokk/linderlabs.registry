@@ -1,16 +1,16 @@
 import {  
   type LucideIcon,
-  Hash
 } from "lucide-react";
 import * as LucideIcons from "lucide-react";
 import { notFound } from "next/navigation";
-import { ComponentCard } from "@/components/registry/component-card";
 import { RegistryNavigation } from "@/components/registry/registry-navigation";
 import { getRegistryItem, getRegistryItems } from "@/lib/registry";
 import { getPrompt } from "@/lib/utils";
 import { RegistryHeader } from "@/components/registry/registry-header";
 import { ComponentActions } from "@/components/registry/component-actions";
 import { RegistryBadges } from "@/components/registry/registry-badges";
+import { BlockDisplay } from "@/components/block-display";
+
 // Function to get icon component from registry data
 function getIconComponent(component: any): LucideIcon | null {
   if (component.icon && LucideIcons[component.icon as keyof typeof LucideIcons]) {
@@ -74,8 +74,8 @@ ${npxCommand}
 
   return (
     <div className="flex flex-col min-h-full w-full">
-        <RegistryHeader componentTitle={component.title} componentIcon={component.icon} />
-        <div className="flex-1 pt-20 p-5 sm:pt-20 md:pt-20 sm:p-10 md:p-10">
+      <RegistryHeader componentTitle={component.title} componentIcon={component.icon} />
+      <div className="flex-1 pt-20 p-5 sm:pt-20 md:pt-20 sm:p-10 md:p-10">
 
         {/* Header with title, badges, and actions */}
         <div className="mb-4">
@@ -110,12 +110,8 @@ ${npxCommand}
           <RegistryBadges type={component.type} name={component.name} icon={component.icon} />
         </div>
 
-        {/* Component preview card */}
-        <ComponentCard
-          component={component}
-          baseUrl={process.env.VERCEL_PROJECT_PRODUCTION_URL ?? ""}
-          prompt={getPrompt()}
-        />
+        {/* Block Viewer - replaces ComponentCard */}
+        <BlockDisplay name={component.name} />
       </div>
 
       {/* Footer navigation - sticky at bottom of content */}
