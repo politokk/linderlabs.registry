@@ -5,12 +5,6 @@
   "title": "Sidebar 07",
   "description": "A sidebar that collapses to icons.",
   "registryDependencies": [
-    "sidebar",
-    "breadcrumb",
-    "separator",
-    "collapsible",
-    "dropdown-menu",
-    "avatar",
     "https://linderlabs-registry.vercel.app/r/theme.json"
   ],
   "files": [
@@ -55,6 +49,324 @@
       "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { ChevronsUpDown, Plus } from \"lucide-react\"\n\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuItem,\n  DropdownMenuLabel,\n  DropdownMenuSeparator,\n  DropdownMenuShortcut,\n  DropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\"\nimport {\n  SidebarMenu,\n  SidebarMenuButton,\n  SidebarMenuItem,\n  useSidebar,\n} from \"@/components/ui/sidebar\"\n\nexport function TeamSwitcher({\n  teams,\n}: {\n  teams: {\n    name: string\n    logo: React.ElementType\n    plan: string\n  }[]\n}) {\n  const { isMobile } = useSidebar()\n  const [activeTeam, setActiveTeam] = React.useState(teams[0])\n\n  if (!activeTeam) {\n    return null\n  }\n\n  return (\n    <SidebarMenu>\n      <SidebarMenuItem>\n        <DropdownMenu>\n          <DropdownMenuTrigger asChild>\n            <SidebarMenuButton\n              size=\"lg\"\n              className=\"data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground\"\n            >\n              <div className=\"bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg\">\n                <activeTeam.logo className=\"size-4\" />\n              </div>\n              <div className=\"grid flex-1 text-left text-sm leading-tight\">\n                <span className=\"truncate font-medium\">{activeTeam.name}</span>\n                <span className=\"truncate text-xs\">{activeTeam.plan}</span>\n              </div>\n              <ChevronsUpDown className=\"ml-auto\" />\n            </SidebarMenuButton>\n          </DropdownMenuTrigger>\n          <DropdownMenuContent\n            className=\"w-(--radix-dropdown-menu-trigger-width) min-w-56 rounded-lg\"\n            align=\"start\"\n            side={isMobile ? \"bottom\" : \"right\"}\n            sideOffset={4}\n          >\n            <DropdownMenuLabel className=\"text-muted-foreground text-xs\">\n              Teams\n            </DropdownMenuLabel>\n            {teams.map((team, index) => (\n              <DropdownMenuItem\n                key={team.name}\n                onClick={() => setActiveTeam(team)}\n                className=\"gap-2 p-2\"\n              >\n                <div className=\"flex size-6 items-center justify-center rounded-md border\">\n                  <team.logo className=\"size-3.5 shrink-0\" />\n                </div>\n                {team.name}\n                <DropdownMenuShortcut>⌘{index + 1}</DropdownMenuShortcut>\n              </DropdownMenuItem>\n            ))}\n            <DropdownMenuSeparator />\n            <DropdownMenuItem className=\"gap-2 p-2\">\n              <div className=\"flex size-6 items-center justify-center rounded-md border bg-transparent\">\n                <Plus className=\"size-4\" />\n              </div>\n              <div className=\"text-muted-foreground font-medium\">Add team</div>\n            </DropdownMenuItem>\n          </DropdownMenuContent>\n        </DropdownMenu>\n      </SidebarMenuItem>\n    </SidebarMenu>\n  )\n}\n",
       "type": "registry:component",
       "target": "app/components/team-switcher.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/accordion.tsx",
+      "content": "import { AccordionDemo } from \"@/app/demo/[name]/ui/accordion-demo\";\nexport const accordion = {\n  name: \"accordion\",\n  components: {\n    Default: <AccordionDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/accordion.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/alert-dialog.tsx",
+      "content": "import { AlertDialogDemo } from \"@/app/demo/[name]/ui/alert-dialog-demo\";\nexport const alertDialog = {\n  name: \"alert-dialog\",\n  components: {\n    Default: <AlertDialogDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/alert-dialog.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/alert.tsx",
+      "content": "import {\n  BasicAlert,\n  IconDescriptionAlert,\n  DescriptionOnlyAlert,\n  IconTitleAlert,\n  LongTitleAlert,\n  LongDescriptionAlert,\n  LongContentAlert,\n  DestructiveAlert,\n  DestructiveWithListAlert,\n  AlertWithAction,\n  CustomColorAlert,\n} from \"@/app/demo/[name]/ui/alert-demo\";\n\nexport const alert = {\n  name: \"alert\",\n  components: {\n    Basic: <BasicAlert />,\n    \"Icon & Description\": <IconDescriptionAlert />,\n    \"Description Only\": <DescriptionOnlyAlert />,\n    \"Icon & Title\": <IconTitleAlert />,\n    \"Long Title\": <LongTitleAlert />,\n    \"Long Description\": <LongDescriptionAlert />,\n    \"Long Content\": <LongContentAlert />,\n    Destructive: <DestructiveAlert />,\n    \"Destructive with List\": <DestructiveWithListAlert />,\n    \"With Action\": <AlertWithAction />,\n    \"Custom Color\": <CustomColorAlert />,\n  },\n};",
+      "type": "registry:ui",
+      "target": "components/ui/alert.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/aspect-ratio.tsx",
+      "content": "import { AspectRatioDemo } from \"@/app/demo/[name]/ui/aspect-ratio-demo\";\nexport const aspectRatio = {\n  name: \"aspect-ratio\",\n  components: {\n    Default: <AspectRatioDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/aspect-ratio.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/avatar.tsx",
+      "content": "import { AvatarDemo } from \"@/app/demo/[name]/ui/avatar-demo\";\nexport const avatar = {\n  name: \"avatar\",\n  components: {\n    Default: <AvatarDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/avatar.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/badge.tsx",
+      "content": "import { BadgeDemo } from \"@/app/demo/[name]/ui/badge-demo\";\nexport const badge = {\n  name: \"badge\",\n  components: {\n    Default: <BadgeDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/badge.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/breadcrumb.tsx",
+      "content": "import { BreadcrumbDemo } from \"@/app/demo/[name]/ui/breadcrumb-demo\";\nexport const breadcrumb = {\n  name: \"breadcrumb\",\n  components: {\n    Default: <BreadcrumbDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/breadcrumb.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/button-group.tsx",
+      "content": "import { ButtonGroupDemo } from \"@/app/demo/[name]/ui/button-group-demo\";\nexport const buttonGroup = {\n  name: \"button-group\",\n  components: {\n    Default: <ButtonGroupDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/button-group.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/button.tsx",
+      "content": "import { ButtonDemo } from \"@/app/demo/[name]/ui/button-demo\";\nexport const button = {\n  name: \"button\",\n  components: {\n    Default: <ButtonDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/button.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/calendar.tsx",
+      "content": "import { CalendarDemo } from \"@/app/demo/[name]/ui/calendar-demo\";\n\nexport const calendar = {\n  name: \"calendar\",\n  components: {\n    Default: <CalendarDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/calendar.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/card.tsx",
+      "content": "  import { CardDemo } from \"@/app/demo/[name]/ui/card-demo\";\n\nexport const card = {\n  name: \"card\",\n  components: {\n    Default: <CardDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/card.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/carousel.tsx",
+      "content": "import { CarouselDemo } from \"@/app/demo/[name]/ui/carousel-demo\";\nexport const carousel = {\n  name: \"carousel\",\n  components: {\n    Default: <CarouselDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/carousel.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/chart.tsx",
+      "content": "import { AreaChartComponent } from \"@/app/demo/[name]/ui/area-chart\";\nimport { BarChartComponent } from \"@/app/demo/[name]/ui/bar-chart\";\nimport { PieChartComponent } from \"@/app/demo/[name]/ui/pie-chart\";\n\nexport const chart = {\n  name: \"chart\",\n  components: {\n    BarChart: <BarChartComponent />,\n    AreaChart: <AreaChartComponent />,\n    PieChart: <PieChartComponent />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/chart.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/checkbox.tsx",
+      "content": "import { CheckboxDemo } from \"@/app/demo/[name]/ui/checkbox-demo\";\nexport const checkbox = {\n  name: \"checkbox\",\n  components: {\n    Default: <CheckboxDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/checkbox.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/collapsible.tsx",
+      "content": "import { CollapsibleDemo } from \"@/app/demo/[name]/ui/collapsible-demo\";\nexport const collapsible = {\n  name: \"collapsible\",\n  components: {\n    Default: <CollapsibleDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/collapsible.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/command.tsx",
+      "content": "import { CommandDemo } from \"@/app/demo/[name]/ui/command-demo\";\nexport const command = {\n  name: \"command\",\n  components: {\n    Default: <CommandDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/command.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/context-menu.tsx",
+      "content": "import { ContextMenuDemo } from \"@/app/demo/[name]/ui/context-menu-demo\";\nexport const contextMenu = {\n  name: \"context-menu\",\n  components: {\n    Default: <ContextMenuDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/context-menu.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/dialog.tsx",
+      "content": "import { DialogDemo } from \"@/app/demo/[name]/ui/dialog-demo\";\nexport const dialog = {\n  name: \"dialog\",\n  components: {\n    Default: <DialogDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/dialog.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/drawer.tsx",
+      "content": "import { DrawerDemo } from \"@/app/demo/[name]/ui/drawer-demo\";\nexport const drawer = {\n  name: \"drawer\",\n  components: {\n    Default: <DrawerDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/drawer.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/dropdown-menu.tsx",
+      "content": "import { DropdownMenuDemo } from \"@/app/demo/[name]/ui/dropdown-menu-demo\";\nexport const dropdownMenu = {\n  name: \"dropdown-menu\",\n  components: {\n    Default: <DropdownMenuDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/dropdown-menu.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/empty.tsx",
+      "content": "import { EmptyDemo } from \"@/app/demo/[name]/ui/empty-demo\";\nexport const empty = {\n  name: \"empty\",\n  components: {\n    Default: <EmptyDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/empty.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/field.tsx",
+      "content": "import { FieldDemo } from \"@/app/demo/[name]/ui/field-demo\";\nexport const field = {\n  name: \"field\",\n  components: {\n    Default: <FieldDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/field.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/form.tsx",
+      "content": "import { FormDemo } from \"@/app/demo/[name]/ui/form-demo\";\nexport const form = {\n  name: \"form\",\n  components: {\n    Default: <FormDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/form.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/hover-card.tsx",
+      "content": "import { HoverCardDemo } from \"@/app/demo/[name]/ui/hover-card-demo\";\nexport const hoverCard = {\n  name: \"hover-card\",\n  components: {\n    Default: <HoverCardDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/hover-card.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/input-group.tsx",
+      "content": "import { InputGroupDemo } from \"@/app/demo/[name]/ui/input-group-demo\";\nexport const inputGroup = {\n  name: \"input-group\",\n  components: {\n    Default: <InputGroupDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/input-group.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/input-otp.tsx",
+      "content": "import { InputOTPDemo } from \"@/app/demo/[name]/ui/input-otp-demo\";\nexport const inputOTP = {\n  name: \"input-otp\",\n  components: {\n    Default: <InputOTPDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/input-otp.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/input.tsx",
+      "content": "import { InputDemo } from \"@/app/demo/[name]/ui/input-demo\";\nexport const input = {\n  name: \"input\",\n  components: {\n    Default: <InputDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/input.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/item.tsx",
+      "content": "import { ItemDemo } from \"@/app/demo/[name]/ui/item-demo\";\nexport const item = {\n  name: \"item\",\n  components: {\n    Default: <ItemDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/item.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/kbd.tsx",
+      "content": "import { KbdDemo } from \"@/app/demo/[name]/ui/kbd-demo\";\nexport const kbd = {\n  name: \"kbd\",\n  components: {\n    Default: <KbdDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/kbd.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/label.tsx",
+      "content": "import { LabelDemo } from \"@/app/demo/[name]/ui/label-demo\";\nexport const label = {\n  name: \"label\",\n  components: {\n    Default: <LabelDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/label.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/menubar.tsx",
+      "content": "import { MenubarDemo } from \"@/app/demo/[name]/ui/menubar-demo\";\nexport const menubar = {\n  name: \"menubar\",\n  components: {\n    Default: <MenubarDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/menubar.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/navigation-menu.tsx",
+      "content": "import { NavigationMenuDemo } from \"@/app/demo/[name]/ui/navigation-menu-demo\"; \nexport const navigationMenu = {\n  name: \"navigation-menu\",\n  components: {\n    Default: <NavigationMenuDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/navigation-menu.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/pagination.tsx",
+      "content": "import { PaginationDemo } from \"@/app/demo/[name]/ui/pagination-demo\";\nexport const pagination = {\n  name: \"pagination\",\n  components: {\n    Default: <PaginationDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/pagination.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/popover.tsx",
+      "content": "import { PopoverDemo } from \"@/app/demo/[name]/ui/popover-demo\";\nexport const popover = {\n  name: \"popover\",\n  components: {\n    Default: <PopoverDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/popover.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/progress.tsx",
+      "content": "import { ProgressDemo } from \"@/app/demo/[name]/ui/progress-demo\";\nexport const progress = {\n  name: \"progress\",\n  components: {\n    Default: <ProgressDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/progress.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/radio-group.tsx",
+      "content": "import { RadioGroupDemo } from \"@/app/demo/[name]/ui/radio-group-demo\";\nexport const radioGroup = {\n  name: \"radio-group\",\n  components: {\n    Default: <RadioGroupDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/radio-group.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/resizable.tsx",
+      "content": "import { ResizableDemo } from \"@/app/demo/[name]/ui/resizable-demo\";\nexport const resizable = {\n  name: \"resizable\",\n  components: {\n    Default: <ResizableDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/resizable.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/scroll-area.tsx",
+      "content": "import { ScrollAreaDemo } from \"@/app/demo/[name]/ui/scroll-area-demo\";\nexport const scrollArea = {\n  name: \"scroll-area\",\n  components: {\n    Default: <ScrollAreaDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/scroll-area.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/select.tsx",
+      "content": "import { SelectDemo } from \"@/app/demo/[name]/ui/select-demo\";\nexport const select = {\n  name: \"select\",\n  components: {\n    Default: <SelectDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/select.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/separator.tsx",
+      "content": "import { SeparatorDemo } from \"@/app/demo/[name]/ui/separator-demo\";\nexport const separator = {\n  name: \"separator\",\n  components: {\n    Default: <SeparatorDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/separator.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/sheet.tsx",
+      "content": "import { SheetDemo } from \"@/app/demo/[name]/ui/sheet-demo\";\nexport const sheet = {\n  name: \"sheet\",\n  components: {\n    Default: <SheetDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/sheet.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/sidebar.tsx",
+      "content": "import SidebarDemo from \"@/app/demo/[name]/ui/sidebar-demo\";\nexport const sidebar = {\n  name: \"sidebar\",\n  components: {\n    Default: <SidebarDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/sidebar.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/skeleton.tsx",
+      "content": "import { SkeletonDemo } from \"@/app/demo/[name]/ui/skeleton-demo\";\nexport const skeleton = {\n  name: \"skeleton\",\n  components: {\n    Default: <SkeletonDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/skeleton.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/slider.tsx",
+      "content": "import { SliderDemo } from \"@/app/demo/[name]/ui/slider-demo\";\nexport const slider = {\n  name: \"slider\",\n  components: {\n    Default: <SliderDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/slider.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/sonner.tsx",
+      "content": "import {\n  ActionSonner,\n  CancelSonner,\n  DescriptionSonner,\n  ErrorSonner,\n  InfoSonner,\n  PromiseSonner,\n  Sonner,\n  SuccessfulSonner,\n  WarningSonner,\n} from \"@/app/demo/[name]/ui/sonner-toasts\";\n\nexport const sonner = {\n  name: \"sonner\",\n  components: {\n    Default: <Sonner />,\n    Description: <DescriptionSonner />,\n    Success: <SuccessfulSonner />,\n    Info: <InfoSonner />,\n    Warning: <WarningSonner />,\n    Error: <ErrorSonner />,\n    Action: <ActionSonner />,\n    Cancel: <CancelSonner />,\n    Promise: <PromiseSonner />,\n  },\n};",
+      "type": "registry:ui",
+      "target": "components/ui/sonner.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/spinner.tsx",
+      "content": "import { SpinnerDemo } from \"@/app/demo/[name]/ui/spinner-demo\";\nexport const spinner = {\n  name: \"spinner\",\n  components: {\n    Default: <SpinnerDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/spinner.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/switch.tsx",
+      "content": "import { SwitchDemo } from \"@/app/demo/[name]/ui/switch-demo\";\nexport const switchConfig = {\n  name: \"switch\",\n  components: {\n    Default: <SwitchDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/switch.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/table.tsx",
+      "content": "import { TableDemo } from \"@/app/demo/[name]/ui/table-demo\";\nexport const table = {\n  name: \"table\",\n  components: {\n    Default: <TableDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/table.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/tabs.tsx",
+      "content": "import { TabsDemo } from \"@/app/demo/[name]/ui/tabs-demo\";\nexport const tabs = {\n  name: \"tabs\",\n  components: {\n    Default: <TabsDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/tabs.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/textarea.tsx",
+      "content": "import { TextareaDemo } from \"@/app/demo/[name]/ui/textarea-demo\";\nexport const textarea = {\n  name: \"textarea\",\n  components: {\n    Default: <TextareaDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/textarea.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/toggle-group.tsx",
+      "content": "import { ToggleGroupDemo } from \"@/app/demo/[name]/ui/toggle-group-demo\";\nexport const toggleGroup = {\n  name: \"toggle-group\",\n  components: {\n    Default: <ToggleGroupDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/toggle-group.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/toggle.tsx",
+      "content": "import { ToggleDemo } from \"@/app/demo/[name]/ui/toggle-demo\";\nexport const toggle = {\n  name: \"toggle\",\n  components: {\n    Default: <ToggleDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/toggle.tsx"
+    },
+    {
+      "path": "src/app/demo/[name]/ui/tooltip.tsx",
+      "content": "import { TooltipDemo } from \"@/app/demo/[name]/ui/tooltip-demo\";\nexport const tooltip = {\n  name: \"tooltip\",\n  components: {\n    Default: <TooltipDemo />,\n  },\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/tooltip.tsx"
     }
   ],
   "meta": {

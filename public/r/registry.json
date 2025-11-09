@@ -134,12 +134,6 @@
       "icon": "Sidebar",
       "description": "A sidebar that collapses to icons.",
       "registryDependencies": [
-        "sidebar",
-        "breadcrumb",
-        "separator",
-        "collapsible",
-        "dropdown-menu",
-        "avatar",
         "https://linderlabs-registry.vercel.app/r/theme.json"
       ],
       "files": [
@@ -177,6 +171,271 @@
           "path": "src/app/demo/[name]/blocks/sidebar-07/components/team-switcher.tsx",
           "type": "registry:component",
           "target": "app/components/team-switcher.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/accordion.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/accordion.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/alert-dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/alert-dialog.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/alert.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/alert.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/aspect-ratio.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/aspect-ratio.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/avatar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/avatar.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/badge.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/badge.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/breadcrumb.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/breadcrumb.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/button-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/button-group.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/button.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/calendar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/calendar.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/card.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/carousel.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/carousel.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/chart.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/chart.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/checkbox.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/checkbox.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/collapsible.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/collapsible.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/command.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/command.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/context-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/context-menu.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dialog.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/drawer.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/drawer.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/dropdown-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dropdown-menu.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/empty.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/empty.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/field.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/field.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/form.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/form.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/hover-card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/hover-card.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/input-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input-group.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/input-otp.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input-otp.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/item.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/item.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/kbd.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/kbd.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/label.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/label.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/menubar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/menubar.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/navigation-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/navigation-menu.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/pagination.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/pagination.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/popover.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/popover.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/progress.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/progress.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/radio-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/radio-group.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/resizable.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/resizable.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/scroll-area.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/scroll-area.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/select.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/select.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/separator.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/separator.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/sheet.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/sheet.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/sidebar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/sidebar.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/skeleton.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/skeleton.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/slider.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/slider.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/sonner.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/sonner.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/spinner.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/spinner.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/switch.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/switch.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/table.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/table.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/tabs.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/tabs.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/textarea.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/textarea.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/toggle-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/toggle-group.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/toggle.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/toggle.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/ui/tooltip.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/tooltip.tsx"
         }
       ],
       "categories": ["chat"],
