@@ -5,6 +5,7 @@ import { fontVariables } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { LayoutProvider } from "@/hooks/use-layout"
 import { Toaster } from "@/components/ui/sonner"
+import "@/app/globals.css"
 
 export const metadata: Metadata = {
   title: {
