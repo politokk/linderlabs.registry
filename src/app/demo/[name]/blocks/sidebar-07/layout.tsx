@@ -1,6 +1,10 @@
 import type { Metadata } from "next"
 
+import { fontVariables } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
+import { LayoutProvider } from "@/hooks/use-layout"
+import { Toaster } from '@/components/ui/sonner'
+
 import "@/app/globals.css"
 
 export const metadata: Metadata = {
@@ -84,12 +88,16 @@ export default function RootLayout({
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body
-        suppressHydrationWarning
+      suppressHydrationWarning
         className={cn(
-          "text-foreground group/body theme-default overscroll-none font-sans antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] xl:[--footer-height:calc(var(--spacing)*24)]"
+          "text-foreground group/body theme-default overscroll-none font-sans antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] xl:[--footer-height:calc(var(--spacing)*24)]",
+          fontVariables
         )}
       >
-        {children}
+          <LayoutProvider>
+              {children}
+              <Toaster position="top-center" />
+          </LayoutProvider>
       </body>
     </html>
   )
