@@ -6,8 +6,6 @@ import { cn } from "@/lib/utils"
 import { LayoutProvider } from "@/hooks/use-layout"
 import { Toaster } from "@/components/ui/sonner"
 
-import "./globals.css"
-
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
