@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "fumadocs-ui/css/shadcn.css";
+@import "./themes.css";
 @variant dark (&:is(.dark *));
 
 :root {
