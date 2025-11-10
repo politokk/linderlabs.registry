@@ -1,5 +1,5 @@
 {
-  "$schema": "https://linderlabs-registry.vercel.app/schema/registry.json",
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "LinderLabs Registry",
   "homepage": "https://linderlabs-registry.vercel.app/",
   "items": [
@@ -436,6 +436,16 @@
           "path": "src/components/ui/tooltip.tsx",
           "type": "registry:ui",
           "target": "components/ui/tooltip.tsx"
+        },
+        {
+          "path": "src/hooks/use-layout.tsx",
+          "type": "registry:hook",
+          "target": "hooks/use-layout.tsx"
+        },
+        {
+          "path": "src/lib/fonts.ts",
+          "type": "registry:lib",
+          "target": "lib/fonts.ts"
         }
       ],
       "categories": ["chat"],
