@@ -2,36 +2,47 @@ import { RegistryFile, FileTree } from "@/components/block-viewer"
 
 /**
  * Creates a file tree structure from registry item files
+ * Uses the target path if available, otherwise falls back to the source path
  */
 export function createFileTreeForRegistryItemFiles(
   files: Array<{ path: string; target?: string }>
 ): FileTree[] {
-  const tree: FileTree[] = []
+  const root: FileTree[] = []
 
   for (const file of files) {
-    const parts = file.path.split("/")
-    let current = tree
+    // Use target path if available (cleaner paths for display), otherwise use source path
+    const displayPath = file.target ?? file.path
+    const parts = displayPath.split("/")
+    let currentLevel = root
 
-    parts.forEach((part, index) => {
-      const isFile = index === parts.length - 1
-      let node = current.find((n) => n.name === part)
+    for (let i = 0; i < parts.length; i++) {
+      const part = parts[i]
+      const isFile = i === parts.length - 1
+      const existingNode = currentLevel.find((node) => node.name === part)
 
-      if (!node) {
-        node = {
-          name: part,
-          path: isFile ? file.target ?? file.path : undefined,
-          children: isFile ? undefined : [],
+      if (existingNode) {
+        if (isFile) {
+          // Update existing file node with full path
+          existingNode.path = displayPath
+        } else {
+          // Move to next level in the tree
+          currentLevel = existingNode.children!
         }
-        current.push(node)
-      }
+      } else {
+        const newNode: FileTree = isFile
+          ? { name: part, path: displayPath }
+          : { name: part, children: [] }
 
-      if (!isFile && node.children) {
-        current = node.children
+        currentLevel.push(newNode)
+
+        if (!isFile) {
+          currentLevel = newNode.children!
+        }
       }
-    })
+    }
   }
 
-  return tree
+  return root
 }
 
 /**
