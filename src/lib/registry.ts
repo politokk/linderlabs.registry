@@ -10,7 +10,7 @@ export interface RegistryFile {
 export interface Component {
   name: string;
   type: string;
-  title?: string;
+  title: string;
   icon?: string;
   description?: string;
   files?: RegistryFile[];
