@@ -88,6 +88,11 @@
           "target": "app/globals.css"
         },
         {
+          "path": "src/app/themes.css",
+          "type": "registry:style",
+          "target": "app/themes.css"
+        },
+        {
           "path": "postcss.config.mjs",
           "type": "registry:file",
           "target": "postcss.config.mjs"
