@@ -50,3 +50,9 @@ export function getComponents() {
     (component) => component.type === "registry:component",
   );
 }
+
+export function getDemos() {
+  return getRegistryItems().filter(
+    (component) => component.type === "registry:demo",
+  );
+}
