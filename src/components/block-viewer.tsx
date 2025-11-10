@@ -173,7 +173,7 @@ function BlockViewerToolbar({ registryUrl }: { registryUrl?: string }) {
   ]
 
   return (
-    <div className="hidden w-full mt-10 items-center gap-2 px-2 lg:flex overflow-x-auto">
+    <div className="hidden w-full mt-0 items-center gap-2 px-2 lg:flex overflow-x-auto">
       <TooltipProvider>
         <div className="inline-flex items-center rounded-lg border p-0 shrink-0" data-view-toggle="">
           {views.map(([key, Icon, tooltipText]) => (
