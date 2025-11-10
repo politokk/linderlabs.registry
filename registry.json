@@ -188,6 +188,11 @@
           "target": "components/theme-selector.tsx"
         },
         {
+          "path": "src/components/orb.tsx",
+          "type": "registry:component",
+          "target": "components/orb.tsx"
+        },
+        {
           "path": "src/components/active-theme.tsx",
           "type": "registry:component",
           "target": "components/active-theme.tsx"

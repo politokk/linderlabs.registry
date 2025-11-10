@@ -81,7 +81,7 @@ ${npxCommand}
         <div className="mb-4 px-2">
           <div className="flex flex-row sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
             <div className="flex items-center gap-3">
-              <h1 className="flex items-center gap-3 text-secondary-foreground [&_svg]:text-secondary-foreground scroll-m-20 text-2xl font-bold tracking-tight sm:text-2xl xl:text-2xl flex items-center gap-3">
+              <h1 className="flex items-center gap-3 text-muted-foreground [&_svg]:text-muted-foreground scroll-m-20 text-2xl font-bold tracking-tight sm:text-2xl xl:text-2xl flex items-center gap-3">
                 {IconComponent && <IconComponent className="size-6 text-secondary-foreground" />}
                 {component.title}
               </h1>
