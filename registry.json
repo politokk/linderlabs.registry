@@ -188,6 +188,11 @@
           "target": "components/theme-selector.tsx"
         },
         {
+          "path": "src/components/active-theme.tsx",
+          "type": "registry:component",
+          "target": "components/active-theme.tsx"
+        },
+        {
           "path": "src/components/registry/mode-switcher.tsx",
           "type": "registry:component",
           "target": "components/registry/mode-switcher.tsx"
