@@ -1,9 +1,11 @@
+import type React from "react"
 import type { Metadata } from "next"
 
 import { fontVariables } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { LayoutProvider } from "@/hooks/use-layout"
-import { Toaster } from '@/components/ui/sonner'
+import { ActiveThemeProvider } from "@/components/active-theme"
+import { Toaster } from "@/components/ui/sonner"
 
 import "@/app/globals.css"
 
@@ -88,16 +90,18 @@ export default function RootLayout({
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body
-      suppressHydrationWarning
+        suppressHydrationWarning
         className={cn(
           "text-foreground group/body theme-default overscroll-none font-sans antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] xl:[--footer-height:calc(var(--spacing)*24)]",
-          fontVariables
+          fontVariables,
         )}
       >
+        <ActiveThemeProvider initialTheme="default">
           <LayoutProvider>
-              {children}
-              <Toaster position="top-center" />
+            {children}
+            <Toaster position="top-center" />
           </LayoutProvider>
+        </ActiveThemeProvider>
       </body>
     </html>
   )

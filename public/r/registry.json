@@ -468,6 +468,11 @@
           "target": "hooks/use-layout.tsx"
         },
         {
+          "path": "src/hooks/use-meta-color.ts",
+          "type": "registry:hook",
+          "target": "hooks/use-meta-color.ts"
+        },
+        {
           "path": "src/lib/fonts.ts",
           "type": "registry:lib",
           "target": "lib/fonts.ts"
