@@ -178,6 +178,21 @@
           "target": "components/registry/registry-header.tsx"
         },
         {
+          "path": "src/components/registry/registry-breadcrumb.tsx",
+          "type": "registry:component",
+          "target": "components/registry/registry-breadcrumb.tsx"
+        },
+        {
+          "path": "src/components/theme-selector.tsx",
+          "type": "registry:component",
+          "target": "components/theme-selector.tsx"
+        },
+        {
+          "path": "src/components/registry/mode-switcher.tsx",
+          "type": "registry:component",
+          "target": "components/registry/mode-switcher.tsx"
+        },
+        {
           "path": "src/components/ui/accordion.tsx",
           "type": "registry:ui",
           "target": "components/ui/accordion.tsx"
