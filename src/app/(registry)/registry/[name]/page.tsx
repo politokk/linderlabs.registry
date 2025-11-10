@@ -78,7 +78,7 @@ ${npxCommand}
       <div className="flex-1 pt-20 p-5 sm:pt-20 md:pt-20 sm:p-10 md:p-10">
 
         {/* Header with title, badges, and actions */}
-        <div className="mb-4">
+        <div className="mb-4 px-2">
           <div className="flex flex-row sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
             <div className="flex items-center gap-3">
               <h1 className="flex items-center gap-3 text-secondary-foreground [&_svg]:text-secondary-foreground scroll-m-20 text-2xl font-bold tracking-tight sm:text-2xl xl:text-2xl flex items-center gap-3">
@@ -105,11 +105,6 @@ ${npxCommand}
             </p>
           )}
         </div>
-
-        <div className="mb-10">
-          <RegistryBadges type={component.type} name={component.name} icon={component.icon} />
-        </div>
-
         {/* Block Viewer - replaces ComponentCard */}
         <BlockDisplay name={component.name} />
       </div>
