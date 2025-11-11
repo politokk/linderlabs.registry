@@ -4,6 +4,7 @@ import type { ReactElement, ReactNode } from "react";
 import { blank } from "@/app/demo/[name]/blocks/blank";
 import { dashboard } from "@/app/demo/[name]/blocks/dashboard";
 import { sidebar07 } from "@/app/demo/[name]/blocks/sidebar-07";
+import MailPage from "@/app/demo/[name]/blocks/mail/page";
 // components
 import { brandHeader } from "@/app/demo/[name]/components/brand-header";
 import { brandSidebar } from "@/app/demo/[name]/components/brand-sidebar";
@@ -79,7 +80,7 @@ export const demos: { [name: string]: Demo } = {
   // blocks
   blank,
   dashboard,
-
+  mail: MailPage,
   // components
   hero,
   login,

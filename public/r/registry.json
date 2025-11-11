@@ -100,6 +100,68 @@
       ]
     },
     {
+      "name": "mail",
+      "type": "registry:block",
+      "title": "Mail",
+      "icon": "Mail",
+      "description": "A mail component that allows users to send and receive emails.",
+      "registryDependencies": [
+        "jotai",
+        "input",
+        "button",
+        "dropdown-menu",
+        "calendar",
+        "popover",
+        "switch",
+        "textarea",
+        "tooltip",
+        "https://linderlabs-registry.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/app/demo/[name]/blocks/mail/page.tsx",
+          "type": "registry:page",
+          "target": "app/page.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/blocks/mail/data.tsx",
+          "type": "registry:file",
+          "target": "app/data.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/blocks/mail/use-mail.ts",
+          "type": "registry:hook",
+          "target": "app/use-mail.ts"
+        },
+        {
+          "path": "src/app/demo/[name]/blocks/mail/components/mail.tsx",
+          "type": "registry:component",
+          "target": "app/components/mail.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/blocks/mail/components/mail-display.tsx",
+          "type": "registry:component",
+          "target": "app/components/mail-display.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/blocks/mail/components/mail-list.tsx",
+          "type": "registry:component",
+          "target": "app/components/mail-list.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/blocks/mail/components/nav.tsx",
+          "type": "registry:component",
+          "target": "app/components/nav.tsx"
+        },
+        {
+          "path": "src/app/demo/[name]/blocks/mail/components/account-switcher.tsx",
+          "type": "registry:component",
+          "target": "app/components/account-switcher.tsx"
+        }
+
+      ]
+    },
+    {
       "name": "sidebar",
       "type": "registry:block",
       "title": "Sidebar",
