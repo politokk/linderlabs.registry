@@ -111,6 +111,11 @@
       ],
       "files": [
         {
+          "path": "public/linderavatar.png",
+          "type": "registry:file",
+          "target": "public/linderavatar.png"
+        },
+        {
           "path": "src/app/demo/[name]/blocks/sidebar/page.tsx",
           "type": "registry:page",
           "target": "app/page.tsx"
