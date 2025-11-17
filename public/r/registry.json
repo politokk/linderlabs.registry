@@ -96,6 +96,11 @@
           "path": "postcss.config.mjs",
           "type": "registry:file",
           "target": "postcss.config.mjs"
+        },
+        {
+          "path": "package.json",
+          "type": "registry:file",
+          "target": "package.json"
         }
       ]
     },
