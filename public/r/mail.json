@@ -5,7 +5,6 @@
   "title": "Mail",
   "description": "A mail component that allows users to send and receive emails.",
   "registryDependencies": [
-    "jotai",
     "input",
     "button",
     "dropdown-menu",
