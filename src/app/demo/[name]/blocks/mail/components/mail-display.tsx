@@ -30,7 +30,7 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-            } from "@/components/ui/popover"
+} from "@/components/ui/popover"
 import { Separator } from "@/components/ui/separator"
 import { Switch } from "@/components/ui/switch"
 import { Textarea } from "@/components/ui/textarea"
@@ -39,7 +39,8 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import { Mail } from "../data"
+import { Mail } from "./data"
+import { ThemeSelector } from "@/components/theme-selector"
 
 interface MailDisplayProps {
   mail: Mail | null
@@ -184,6 +185,7 @@ export function MailDisplay({ mail }: MailDisplayProps) {
             <DropdownMenuItem>Mute thread</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
+        <ThemeSelector />
       </div>
       <Separator />
       {mail ? (
@@ -209,7 +211,7 @@ export function MailDisplay({ mail }: MailDisplayProps) {
             </div>
             {mail.date && (
               <div className="ml-auto text-xs text-muted-foreground">
-                {format(new Date(mail.date), "PPpp")}
+                {format(new Date(mail.date), "PPp")}
               </div>
             )}
           </div>

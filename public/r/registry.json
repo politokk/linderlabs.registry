@@ -79,7 +79,69 @@
           "sidebar-ring": "oklch(0.58 0.15 144.17)",
           "radius": "0.875rem"
         }
-      },
+      }
+    },
+    {
+        "name": "design-system",
+        "type": "registry:style",
+        "category": "rules",
+        "icon": "Palette",
+        "registryDependencies": [
+          "@linderlabs/accordion",
+          "@linderlabs/alert",
+          "@linderlabs/alert-dialog",
+          "@linderlabs/aspect-ratio",
+          "@linderlabs/avatar",
+          "@linderlabs/badge",
+          "@linderlabs/breadcrumb",
+          "@linderlabs/button",
+          "@linderlabs/button-group",
+          "@linderlabs/calendar",
+          "@linderlabs/card",
+          "@linderlabs/carousel",
+          "@linderlabs/checkbox",
+          "@linderlabs/collapsible",
+          "@linderlabs/combobox",
+          "@linderlabs/command",
+          "@linderlabs/context-menu",
+          "@linderlabs/data-table",
+          "@linderlabs/date-picker",
+          "@linderlabs/dialog",
+          "@linderlabs/drawer",
+          "@linderlabs/dropdown-menu",
+          "@linderlabs/empty",
+          "@linderlabs/field",
+          "@linderlabs/hover-card",
+          "@linderlabs/input",
+          "@linderlabs/input-group",
+          "@linderlabs/input-otp",
+          "@linderlabs/item",
+          "@linderlabs/kbd",
+          "@linderlabs/label",
+          "@linderlabs/menubar",
+          "@linderlabs/navigation-menu",
+          "@linderlabs/native-select",
+          "@linderlabs/pagination",
+          "@linderlabs/popover",
+          "@linderlabs/progress",
+          "@linderlabs/radio-group",
+          "@linderlabs/resizable",
+          "@linderlabs/scroll-area",
+          "@linderlabs/select",
+          "@linderlabs/separator",
+          "@linderlabs/sheet",
+          "@linderlabs/skeleton",
+          "@linderlabs/slider",
+          "@linderlabs/sonner",
+          "@linderlabs/spinner",
+          "@linderlabs/switch",
+          "@linderlabs/table",
+          "@linderlabs/tabs",
+          "@linderlabs/textarea",
+          "@linderlabs/toggle",
+          "@linderlabs/toggle-group",
+          "@linderlabs/tooltip"
+        ],
       "dependencies": ["radix-ui"],
       "files": [
         {
@@ -96,11 +158,6 @@
           "path": "postcss.config.mjs",
           "type": "registry:file",
           "target": "postcss.config.mjs"
-        },
-        {
-          "path": "package.json",
-          "type": "registry:file",
-          "target": "package.json"
         }
       ]
     },
@@ -124,19 +181,34 @@
       ],
       "files": [
         {
+          "path": "src/app/demo/[name]/blocks/sidebar-07/layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        },
+        {
           "path": "src/app/demo/[name]/blocks/mail/page.tsx",
           "type": "registry:page",
           "target": "app/page.tsx"
         },
         {
-          "path": "src/app/demo/[name]/blocks/mail/data.tsx",
-          "type": "registry:file",
-          "target": "app/data.tsx"
+          "path": "src/app/demo/[name]/blocks/mail/components/data.tsx",
+          "type": "registry:component",
+          "target": "app/components/data.tsx"
         },
         {
-          "path": "src/app/demo/[name]/blocks/mail/use-mail.ts",
+          "path": "src/hooks/use-mail.ts",
           "type": "registry:hook",
-          "target": "app/use-mail.ts"
+          "target": "hooks/use-mail.ts"
+        },
+        {
+          "path": "src/hooks/use-meta-color.ts",
+          "type": "registry:hook",
+          "target": "hooks/use-meta-color.ts"
+        },
+        {
+          "path": "src/hooks/use-layout.tsx",
+          "type": "registry:hook",
+          "target": "hooks/use-layout.tsx"
         },
         {
           "path": "src/app/demo/[name]/blocks/mail/components/mail.tsx",
@@ -162,8 +234,97 @@
           "path": "src/app/demo/[name]/blocks/mail/components/account-switcher.tsx",
           "type": "registry:component",
           "target": "app/components/account-switcher.tsx"
+        },
+        {
+          "path": "src/components/theme-selector.tsx",
+          "type": "registry:component",
+          "target": "components/theme-selector.tsx"
+        },
+        {
+          "path": "src/components/orb.tsx",
+          "type": "registry:component",
+          "target": "components/orb.tsx"
+        },
+        {
+          "path": "src/components/active-theme.tsx",
+          "type": "registry:component",
+          "target": "components/active-theme.tsx"
+        },
+        {
+          "path": "src/components/registry/mode-switcher.tsx",
+          "type": "registry:component",
+          "target": "components/registry/mode-switcher.tsx"
+        },
+        {
+          "path": "src/lib/fonts.ts",
+          "type": "registry:lib",
+          "target": "lib/fonts.ts"
+        },
+        {
+          "path": "src/components/ui/input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input.tsx"
+        },
+        {
+          "path": "src/components/ui/separator.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/separator.tsx"
+        },
+        {
+          "path": "src/components/ui/tooltip.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/tooltip.tsx"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/button.tsx"
+        },
+        {
+          "path": "src/components/ui/avatar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/avatar.tsx"
+        },
+        {
+          "path": "src/components/ui/calendar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/calendar.tsx"
+        },
+        {
+          "path": "src/components/ui/label.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/label.tsx"
+        },
+        {
+          "path": "src/components/ui/dropdown-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dropdown-menu.tsx"
+        },
+        {
+          "path": "src/components/ui/switch.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/switch.tsx"
+        },
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/textarea.tsx"
+        },
+        {
+          "path": "src/components/ui/scroll-area.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/scroll-area.tsx"
+        },
+        {
+          "path": "src/components/ui/badge.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/badge.tsx"
+        },
+        {
+          "path": "src/components/ui/select.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/select.tsx"
         }
-
       ]
     },
     {
@@ -201,6 +362,26 @@
           "path": "src/app/demo/[name]/blocks/sidebar/components/nav-projects.tsx",
           "type": "registry:component",
           "target": "app/components/nav-projects.tsx"
+        },
+        {
+          "path": "src/components/theme-selector.tsx",
+          "type": "registry:component",
+          "target": "components/theme-selector.tsx"
+        },
+        {
+          "path": "src/components/orb.tsx",
+          "type": "registry:component",
+          "target": "components/orb.tsx"
+        },
+        {
+          "path": "src/components/active-theme.tsx",
+          "type": "registry:component",
+          "target": "components/active-theme.tsx"
+        },
+        {
+          "path": "src/components/registry/mode-switcher.tsx",
+          "type": "registry:component",
+          "target": "components/registry/mode-switcher.tsx"
         }
       ]
     },
@@ -545,7 +726,7 @@
           "target": "components/ui/tooltip.tsx"
         },
         {
-          "path": "src/hooks/use-layout.tsx",
+          "path": "src/hooks/use-layout.tsx", 
           "type": "registry:hook",
           "target": "hooks/use-layout.tsx"
         },

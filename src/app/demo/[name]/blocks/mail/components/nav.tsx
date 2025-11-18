@@ -84,4 +84,4 @@ export function Nav({ links, isCollapsed }: NavProps) {
       </nav>
     </div>
   )
-}   
+}

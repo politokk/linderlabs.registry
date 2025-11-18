@@ -3,6 +3,9 @@
   "style": "new-york",
   "rsc": true,
   "tsx": true,
+  "registries": {
+    "@linderlabs": "https://linderlabz-registry.vercel.app/r/{name}.json"
+  },
   "tailwind": {
     "config": "",
     "css": "src/styles/globals.css",

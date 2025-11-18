@@ -28,14 +28,15 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-    } from "@/components/ui/tabs"
+} from "@/components/ui/tabs"
 import { TooltipProvider } from "@/components/ui/tooltip"
+
+import { type Mail } from "./data"
+import { useMail } from "@/hooks/use-mail"
 import { AccountSwitcher } from "./account-switcher"
 import { MailDisplay } from "./mail-display"
 import { MailList } from "./mail-list"
 import { Nav } from "./nav"
-import { type Mail } from "../data"
-import { useMail } from "../use-mail"
 
 interface MailProps {
   accounts: {
@@ -183,7 +184,7 @@ export function Mail({
         <ResizableHandle withHandle />
         <ResizablePanel defaultSize={defaultLayout[1]} minSize={30}>
           <Tabs defaultValue="all">
-            <div className="flex items-center px-4 py-2">
+            <div className="flex items-center border-b px-4 py-2">
               <h1 className="text-xl font-bold">Inbox</h1>
               <TabsList className="ml-auto">
                 <TabsTrigger
@@ -200,11 +201,10 @@ export function Mail({
                 </TabsTrigger>
               </TabsList>
             </div>
-            <Separator />
-            <div className="bg-background/95 p-4 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+            <div className="bg-background/95 supports-[backdrop-filter]:bg-background/60 p-4 backdrop-blur">
               <form>
                 <div className="relative">
-                  <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
+                  <Search className="text-muted-foreground absolute top-2.5 left-2 h-4 w-4" />
                   <Input placeholder="Search" className="pl-8" />
                 </div>
               </form>
@@ -226,4 +226,4 @@ export function Mail({
       </ResizablePanelGroup>
     </TooltipProvider>
   )
-}   
+}

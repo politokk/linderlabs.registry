@@ -2,11 +2,10 @@ import { ComponentProps } from "react"
 import { formatDistanceToNow } from "date-fns"
 
 import { cn } from "@/lib/utils"
+import { Mail } from "./data"
+import { useMail } from "@/hooks/use-mail"
 import { Badge } from "@/components/ui/badge"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Separator } from "@/components/ui/separator"
-import { Mail } from "../data"
-import { useMail } from "../use-mail"
 
 interface MailListProps {
   items: Mail[]
@@ -22,7 +21,7 @@ export function MailList({ items }: MailListProps) {
           <button
             key={item.id}
             className={cn(
-              "flex flex-col items-start gap-2 rounded-lg border p-3 text-left text-sm transition-all hover:bg-accent",
+              "hover:bg-accent flex flex-col items-start gap-2 rounded-lg border p-3 text-left text-sm transition-all",
               mail.selected === item.id && "bg-muted"
             )}
             onClick={() =>
@@ -55,12 +54,12 @@ export function MailList({ items }: MailListProps) {
               </div>
               <div className="text-xs font-medium">{item.subject}</div>
             </div>
-            <div className="line-clamp-2 text-xs text-muted-foreground">
+            <div className="text-muted-foreground line-clamp-2 text-xs">
               {item.text.substring(0, 300)}
             </div>
             {item.labels.length ? (
               <div className="flex items-center gap-2">
-                {item.labels.map((label: string) => (
+                {item.labels.map((label) => (
                   <Badge key={label} variant={getBadgeVariantFromLabel(label)}>
                     {label}
                   </Badge>
