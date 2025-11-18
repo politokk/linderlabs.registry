@@ -168,14 +168,7 @@
       "icon": "Mail",
       "description": "A mail component that allows users to send and receive emails.",
       "registryDependencies": [
-        "input",
-        "button",
-        "dropdown-menu",
-        "calendar",
-        "popover",
-        "switch",
-        "textarea",
-        "tooltip",
+        "design-system",
         "https://linderlabs-registry.vercel.app/r/theme.json"
       ],
       "files": [
