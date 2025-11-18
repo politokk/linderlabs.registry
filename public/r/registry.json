@@ -173,6 +173,21 @@
       ],
       "files": [
         {
+          "path": "src/app/globals.css",
+          "type": "registry:style",
+          "target": "app/globals.css"
+        },
+        {
+          "path": "src/app/themes.css",
+          "type": "registry:style",
+          "target": "app/themes.css"
+        },
+        {
+          "path": "postcss.config.mjs",
+          "type": "registry:file",
+          "target": "postcss.config.mjs"
+        },
+        {
           "path": "src/app/demo/[name]/blocks/sidebar-07/layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
@@ -188,9 +203,9 @@
           "target": "app/components/data.tsx"
         },
         {
-          "path": "src/hooks/use-mail.ts",
-          "type": "registry:hook",
-          "target": "hooks/use-mail.ts"
+          "path": "src/app/demo/[name]/blocks/mail/components/use-mail.ts",
+          "type": "registry:component",
+          "target": "app/components/use-mail.ts"
         },
         {
           "path": "src/hooks/use-meta-color.ts",
@@ -276,6 +291,11 @@
           "path": "src/components/ui/avatar.tsx",
           "type": "registry:ui",
           "target": "components/ui/avatar.tsx"
+        },
+        {
+          "path": "src/components/ui/sonner.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/sonner.tsx"
         },
         {
           "path": "src/components/ui/calendar.tsx",

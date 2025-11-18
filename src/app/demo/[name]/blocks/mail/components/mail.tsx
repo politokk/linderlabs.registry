@@ -32,7 +32,7 @@ import {
 import { TooltipProvider } from "@/components/ui/tooltip"
 
 import { type Mail } from "./data"
-import { useMail } from "@/hooks/use-mail"
+import { useMail } from "./use-mail"
 import { AccountSwitcher } from "./account-switcher"
 import { MailDisplay } from "./mail-display"
 import { MailList } from "./mail-list"
