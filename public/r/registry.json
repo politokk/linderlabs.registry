@@ -172,22 +172,7 @@
       ],
       "files": [
         {
-          "path": "src/app/globals.css",
-          "type": "registry:style",
-          "target": "app/globals.css"
-        },
-        {
-          "path": "src/app/themes.css",
-          "type": "registry:style",
-          "target": "app/themes.css"
-        },
-        {
-          "path": "postcss.config.mjs",
-          "type": "registry:file",
-          "target": "postcss.config.mjs"
-        },
-        {
-          "path": "src/app/demo/[name]/blocks/sidebar-07/layout.tsx",
+          "path": "src/app/demo/[name]/blocks/mail/layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
